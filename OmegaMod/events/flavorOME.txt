@@ -35,7 +35,7 @@ country_event = {
     }
 }
 
-#Free cores to spur AI aggression
+#Release protectorates to increase the odds of blobbing?
 country_event = {
     id = flavor_ome.2
     title = flavor_ome.2.t
@@ -51,13 +51,13 @@ country_event = {
     }
 
     option = { 
-        name = flavor_ome.2.a #Localization: We are destined to rule the entire world
+        name = flavor_ome.2.a #Localization: We must refrain from indirect rule
         option = {
-            all_neighbor_country = {
-                all_neighbor_province = {
-                    owned_by = ROOT
+            random_subject_country = {
+                is_protectorate = {
+                    PREV = { vassalize = PREV }
+                    free_vassal = PREV #Optional. Might not be neccesary.
                 }
-                add_core = ROOT
             }
         }
     }
