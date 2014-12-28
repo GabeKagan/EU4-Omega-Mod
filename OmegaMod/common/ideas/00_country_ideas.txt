@@ -5765,7 +5765,7 @@ SUK_ideas = {
 OME_ideas = {
 	start = {
 		global_unrest = -10 #All of these ideas are deliberately overpowered.
-		technology_cost = -4.00 #Part of a kludge to keep the Omega from making protectorates.
+		technology_cost = -1.00
 	}
 
 	bonus = {
