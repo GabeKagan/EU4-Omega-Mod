@@ -1,0 +1,64 @@
+#Events for the Omega
+
+namespace = flavor_ome
+
+#Turns a random AI country into the Omega
+country_event = {
+    id = flavor_ome.1
+    title = flavor_ome.1.t
+    description = flavor_ome.1.d
+    picture = RELIGIOUS_TURMOIL_eventPicture #Replace
+    fire_only_once = yes
+
+    trigger = {
+        NOT = { exists = OME }
+        is_year = 1444
+        ai = yes #Because turning a human into the Omega would be unfun.
+    }
+
+    mean_time_to_happen = {
+        days = 1 #Rewrite this so it happens on a specific day?
+    }
+
+    option = { 
+        name = flavor_ome.1.a #Localization: Let the reign of terror begin!
+        every_province = {
+            limit = {
+                owned_by = ROOT
+                }
+            add_core = OME #Omega should get cores on its "host" nation 
+        }
+        change_tag = OME
+        change_technology_group = omegan
+        change_unit_type = chinese #Placeholder
+        swap_free_idea_group = yes      #keep progress (Get the Omega ideas?)
+    }
+}
+
+#Free cores to spur AI aggression
+country_event = {
+    id = flavor_ome.2
+    title = flavor_ome.2.t
+    description = flavor_ome.2.d
+    picture = RELIGIOUS_TURMOIL_eventPicture
+
+    trigger {
+        tag = OME
+    }
+
+    mean_time_to_happen = {
+        months = 60 #Adjust as needed?
+    }
+
+    option = { 
+        name = flavor_ome.2.a #Localization: We are destined to rule the entire world
+        option = {
+            all_neighbor_country = {
+                all_neighbor_province = {
+                    owned_by = ROOT
+                }
+                add_core = ROOT
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+#Country Name: Please see filename.
+
+graphical_culture = asiangfx
+
+color = { 192  192  192 }
+
+historical_idea_groups = {
+	exploration_ideas
+	expansion_ideas
+	trade_ideas
+	quantity_ideas
+	offensive_ideas
+	administrative_ideas
+	economic_ideas
+	maritime_ideas
+}
+
+historical_units = {
+	chinese_longspear
+	eastern_bow
+	chinese_footsoldier
+	chinese_steppe
+	asian_arquebusier
+	asian_charge_cavalry
+	asian_mass_infantry
+	manchu_banner
+	han_banner
+	asian_musketeer
+	chinese_dragoon
+	reformed_asian_musketeer
+	reformed_asian_cavalry
+	reformed_manchu_rifle
+}
+
+monarch_names = {
+	"Eligos #0" = 40
+	"Andariel #0" = -20
+	"Azmodan #0" = 20
+	"Baal #0" = 20
+	"Belial #0" = 20
+	"Diablo #0" = 20
+	"Duriel #0" = 20
+	"Mephisto #0" = 20
+	"Abaddon #0" = 10
+	"Adramalech #0" = 10
+	"Cain #0" = 10
+	"Farfour #0" = 10
+	"Ifrit #0" = 10
+	"Legion #0" = 10
+	"Lucifer #0" = 10
+	"Lilith #0" = -10
+	"Pazuzu #0" = 10
+	"Samael #0" = 10
+	"Armripper Bludgeonface #0" = 5
+}
+
+leader_names = {
+
+	Battlemaster
+	Warmaster
+	Starkiller
+	Kingslayer
+	Doombringer
+	Panzerfaust
+	Spinebreaker
+	Devilkin
+	Demoniac
+}
+
+ship_names = {
+	Abrasion Brimstone Carnage Destruction "Evil Incarnate"
+	Fearmonger Goremonger Hatred Inferno Justice
+	Kill "Looming Terror" Mordor Nastiness
+	"Overwhelming Force" Omega Pain "Queen of Terror" Ruination Slaughter
+	Terror Unmaker "Vault of Deathoom" "Warrior's Folly" "X Death"
+	"Your Country's Doom" Zuul
+}
+
+army_names { 
+	"Legion of Doom"
+	"Legion of Damnation"
+	"Legion of Torment"
+	"Legion of Terror"
+	"Legion of Horror"
+	"$PROVINCE Legion"
+}
+
+fleet_names {
+	"Armada of the Omega" "Armada of Terror"
+	"Armada of Destruction" "Armada of Domination"
+}
