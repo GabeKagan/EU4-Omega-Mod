@@ -21,21 +21,32 @@ country_event = {
     }
 
     option = { 
-        name = flavor_ome.1.a #Localization: Let the reign of terror begin!
+        name = flavor_ome.1.a #Localization for later: Let the reign of terror begin!
+
         every_province = {
             limit = {
                 owned_by = ROOT
                 }
             add_core = OME #Omega should get cores on its "host" nation 
         }
-        change_tag = OME
+
         change_technology_group = omegan
+        change_tag = OME
         change_unit_type = chinese #Placeholder
         swap_free_idea_group = yes      #keep progress (Get the Omega ideas?)
+
+        #If the Omega is tribal, turn it into a monarchy and remove any native councils
+        if {
+            owner = {
+                OR = { government = tribal_despotism government = tribal_kingdom government = tribal_federation government = steppe_horde government = siberian_native_council government = tribal_democracy government = native_council }
+            }
+            change_government = despotic_monarchy
+            native_mechanic = no #Just a test!
+        }
     }
 }
 
-#Release protectorates to increase the odds of blobbing?
+#Anti-protectorate event
 country_event = {
     id = flavor_ome.2
     title = flavor_ome.2.t
@@ -47,7 +58,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        months = 60 #Adjust as needed?
+        months = 30 #Adjust as needed?
     }
 
     option = { 
@@ -55,10 +66,37 @@ country_event = {
         option = {
             random_subject_country = {
                 is_protectorate = {
-                    PREV = { vassalize = PREV }
-                    free_vassal = PREV #Optional. Might not be neccesary.
+                    PREV = { vassalize = PREV } #Should ensure diplomatic annexation at some point, at the very least
                 }
             }
         }
     }
 }
+
+#Free explorers for the Omega once it has ships (based off "Merchant Expedition in RandomEvents.txt"), even if it doesn't take exploration ideas
+
+country_event = {
+    id = flavor_ome.3
+    title = flavor_ome.3.t
+    desc = flavor_ome.3.d
+    picture = EXPLORERS_eventPicture
+    
+    trigger = {
+        num_of_ports = 1
+        tag = OME
+    }
+    
+    mean_time_to_happen = {
+        months = 120
+    }
+    
+    option = {
+        name = flavor_ome.3.a
+        random_owned_province = {
+            limit = { has_port = yes }
+            heavy_ship = ROOT
+        }
+        create_explorer = 50
+    }
+}
+

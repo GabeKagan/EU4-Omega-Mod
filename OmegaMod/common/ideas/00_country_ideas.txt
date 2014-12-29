@@ -5783,7 +5783,7 @@ OME_ideas = {
 	}
 	native_assimilation = {
 		colonists = 2
-		auto_explore_adjacent_to_colony = yes
+		diplomatic_reputation = 6
 	}
 	overwhelming_army = {
 		global_manpower_modifier = 1.00
