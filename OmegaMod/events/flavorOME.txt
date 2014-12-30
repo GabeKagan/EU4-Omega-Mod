@@ -7,7 +7,7 @@ country_event = {
     id = flavor_ome.1
     title = flavor_ome.1.t
     description = flavor_ome.1.d
-    picture = RELIGIOUS_TURMOIL_eventPicture #Replace
+    picture = RELIGIOUS_TURMOIL_eventPicture
     fire_only_once = yes
 
     trigger = {
@@ -21,7 +21,7 @@ country_event = {
     }
 
     option = { 
-        name = flavor_ome.1.a #Localization for later: Let the reign of terror begin!
+        name = flavor_ome.1.a
 
         every_province = {
             limit = {
@@ -82,7 +82,7 @@ country_event = {
     }
 
     option = { 
-        name = flavor_ome.2.a #Localization: We must refrain from indirect rule
+        name = flavor_ome.2.a 
         option = {
             random_subject_country = {
                 is_protectorate = {
