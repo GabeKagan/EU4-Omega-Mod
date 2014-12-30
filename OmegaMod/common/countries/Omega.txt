@@ -51,7 +51,10 @@ monarch_names = {
 	"Lilith #0" = -10
 	"Pazuzu #0" = 10
 	"Samael #0" = 10
-	"Armripper Bludgeonface #0" = 5
+	"Armripper Bludgeonface #0" = 10
+	"Khorne #0" = 5
+	"Sauron #0" = 5
+
 }
 
 leader_names = {
@@ -65,6 +68,8 @@ leader_names = {
 	Spinebreaker
 	Devilkin
 	Demoniac
+	Hellbringer
+	"Death Incarnate"
 }
 
 ship_names = {
@@ -88,4 +93,5 @@ army_names {
 fleet_names {
 	"Armada of the Omega" "Armada of Terror"
 	"Armada of Destruction" "Armada of Domination"
+	"Armada of Ruination"
 }
