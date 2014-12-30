@@ -17,7 +17,7 @@ country_event = {
     }
 
     mean_time_to_happen = {
-        days = 1 #Rewrite this so it happens on a specific day?
+        days = 3 #Rewrite this so it happens on a specific day?
     }
 
     option = { 
@@ -43,16 +43,16 @@ country_event = {
             change_government = despotic_monarchy
             native_mechanic = no #Just a test!
         }
-        events = { flavor_ome.1.followup } #Triggers the announcement event
+        events = { flavor_ome.followup } #Triggers the announcement event
     }
 }
 
 #Informs the player that the Omega is on the map, but doesn't say where (unless we change that)
 #NOT DONE YET!
 country_event = {
-    id = flavor_ome.1.followup
-    title = flavor_ome.1.followup.t
-    description = flavor_ome.1.followup.d
+    id = flavor_ome.followup
+    title = flavor_ome.followup.t
+    description = flavor_ome.followup.d
     picture = RELIGIOUS_TURMOIL_eventPicture #Replace
     is_triggered_only = yes
 
@@ -61,7 +61,7 @@ country_event = {
     }
 
     option = { 
-        name = flavor_ome.1.followup.a
+        name = flavor_ome.followup.a
     #Perhaps add a "difficulty" event that adjusts the strength of the Omega's bonuses!
     }
 }
