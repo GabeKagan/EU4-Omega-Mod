@@ -3,6 +3,7 @@
 namespace = flavor_ome
 
 #Turns a random AI country into the Omega
+#BUGGED! It's always Connacht!
 country_event = {
     id = flavor_ome.1
     title = flavor_ome.1.t
@@ -13,58 +14,44 @@ country_event = {
     trigger = {
         NOT = { exists = OME }
         is_year = 1444
-        ai = yes #Because turning a human into the Omega would be unfun.
+        ai = no #Important distinction - this event informs the player of the Omega's birth, but does not turn them into the Omega
     }
 
     mean_time_to_happen = {
-        days = 3 #Rewrite this so it happens on a specific day?
+        days = 1 
     }
 
     option = { 
         name = flavor_ome.1.a
+        random_country {
+            ai = yes #Because turning a human into the Omega would be unfun. {
 
-        every_province = {
-            limit = {
-                owned_by = ROOT
+                change_technology_group = omegan
+                change_tag = OME
+                change_unit_type = western #Placeholder
+                swap_free_idea_group = yes #Get the Omega ideas
+
+                every_province = {
+                    limit = {
+                        owned_by = OME
+                        }
+                    add_core = OME #Omega should get cores on its "host" nation
                 }
-            add_core = OME #Omega should get cores on its "host" nation 
-        }
 
-        change_technology_group = omegan
-        change_tag = OME
-        change_unit_type = chinese #Placeholder
-        swap_free_idea_group = yes      #keep progress (Get the Omega ideas?)
-
-        #If the Omega is tribal, turn it into a monarchy and remove any native councils
-        if {
-            owner = {
-                OR = { government = tribal_despotism government = tribal_kingdom government = tribal_federation government = steppe_horde government = siberian_native_council government = tribal_democracy government = native_council }
+                #If the Omega is tribal, turn it into a monarchy and remove any native councils
+                if {
+                    owner = {
+                        OR = { government = tribal_despotism government = tribal_kingdom government = tribal_federation government = steppe_horde government = siberian_native_council government = tribal_democracy government = native_council }
+                    }
+                    change_government = despotic_monarchy
+                    native_mechanic = no #Still needs fixing
+                }
+                #Perhaps add a "difficulty" event that adjusts the strength of the Omega's bonuses?
             }
-            change_government = despotic_monarchy
-            native_mechanic = no #Just a test!
         }
-        events = { flavor_ome.followup } #Triggers the announcement event
     }
 }
 
-#Informs the player that the Omega is on the map, but doesn't say where (unless we change that)
-#NOT DONE YET!
-country_event = {
-    id = flavor_ome.followup
-    title = flavor_ome.followup.t
-    description = flavor_ome.followup.d
-    picture = RELIGIOUS_TURMOIL_eventPicture #Replace
-    is_triggered_only = yes
-
-    trigger {
-        NOT { ai = yes } #This is a localization event, only useful to human players
-    }
-
-    option = { 
-        name = flavor_ome.followup.a
-    #Perhaps add a "difficulty" event that adjusts the strength of the Omega's bonuses!
-    }
-}
 
 #Anti-protectorate event
 country_event = {
