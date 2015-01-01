@@ -3,7 +3,6 @@
 namespace = flavor_ome
 
 #Turns a random AI country into the Omega
-#BUGGED! It's always Connacht!
 country_event = {
     id = flavor_ome.1
     title = flavor_ome.1.t
@@ -46,6 +45,16 @@ country_event = {
                     change_government = despotic_monarchy
                     native_mechanic = no #Still needs fixing
                 }
+
+                #Increase the wealth of one of the Omega's provinces, giving it a boost, especially if it's small
+                random_province {
+                    limit = {
+                        owned_by = OME
+                        }
+                    add_base_tax = 5
+                    add_province_manpower = 5 
+                }
+
                 #Perhaps add a "difficulty" event that adjusts the strength of the Omega's bonuses?
             }
         }
