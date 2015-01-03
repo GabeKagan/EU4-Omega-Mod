@@ -1,51 +1,55 @@
 #This is suffix'ed "ZZZ" only to make it easier to find.
 
 #These decisions have to be tripped early, or not at all, and taking one locks you in for the rest of the game.
-make_omega_easier = {
-    
-    potential = {
-        ai = no
-        NOT = { is_year = 1446 }
-    }
-
-    allow = {
-        OME = {
-            NOT = {
-                OR = {
-                    has_country_flag = made_omega_easier
-                    has_country_flag = made_omega_harder 
-                }
-            }  
+country_decisions = {
+    make_omega_easier = {
+        major = yes
+        potential = {
+            ai = no
+            NOT = { is_year = 1446 }
         }
+
+        allow = {
+            exists = OME #Best to see where the Omega's taking root before you adjust its strength.
+            OME = {
+                NOT = {
+                    OR = {
+                        has_country_flag = made_omega_easier
+                        has_country_flag = made_omega_harder 
+                    }
+                }  
+            }
+        }
+
+        effect = {
+            OME = { set_country_flag = made_omega_easier }   
+        }
+
     }
 
-    effect = {
-        OME = { set_country_flag = made_omega_easier }   
+    make_omega_harder = {
+        major = yes
+        potential = {
+            ai = no
+            NOT = { is_year = 1446 }
+        } 
+
+        allow = {
+            exists = OME
+            OME = {
+                NOT = {
+                    OR = {
+                        has_country_flag = made_omega_easier
+                        has_country_flag = made_omega_harder 
+                    }
+                }  
+            }        
+        } 
+        
+        effect = {
+            OME = { set_country_flag = made_omega_harder }
+        } 
+
+
     }
-
-}
-
-make_omega_harder = {
-
-    potential = {
-        ai = no
-        NOT = { is_year = 1446 }
-    } 
-
-    allow = {
-        OME = {
-            NOT = {
-                OR = {
-                    has_country_flag = made_omega_easier
-                    has_country_flag = made_omega_harder 
-                }
-            }  
-        }        
-    } 
-    
-    effect = {
-        OME = { set_country_flag = made_omega_harder }
-    } 
-
-
 }

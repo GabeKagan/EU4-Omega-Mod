@@ -1,0 +1,7 @@
+l_english:
+ omega_permanent_bonuses: "Boon of the Omega"
+ desc_omega_permanent_bonuses: "No matter how desperate its situation gets, the Omega can rely upon a few perks to keep it on its feet and strengthen its efforts at conquest."
+ omega_lower_difficulty: "Weakened Omega"
+ desc_omega_lower_difficulty: "Someone couldn't take the heat. The Omega no longer has access to its full complement of bonuses."
+ omega_higher_difficulty: "Strengthened Omega"
+ desc_omega_higher_difficulty: "The Omega is now even more ridiculously overpowered. It might be a good time to take a few centuries' vacation in outer space."

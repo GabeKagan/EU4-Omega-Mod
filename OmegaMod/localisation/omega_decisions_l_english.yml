@@ -1,0 +1,5 @@
+l_english:
+ make_omega_easier_title: "Weaken the Omega"
+ make_omega_easier_desc: "If the Omega is particularly strong, or you worried that it will overpower you too quickly, you can use this decision to remove some (but not all) of its bonuses. You can only do this once the Omega has actually spawned, and only before 1446. I admit it. This event presumably needs to be rewritten to support later start dates."
+ make_omega_harder_title: "Strengthen the Omega"
+ make_omega_harder_desc: "If you're REALLY looking for a good time, this decision will give the Omega a couple of nasty bonuses that you'll immediately regret handing out. You can only do this once the Omega has actually spawned, and only before 1446. I admit it. This event presumably needs to be rewritten to support later start dates."
