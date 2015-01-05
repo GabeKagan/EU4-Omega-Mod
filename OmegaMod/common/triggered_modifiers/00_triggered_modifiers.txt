@@ -537,8 +537,7 @@ omega_lower_difficulty {
 	global_tax_modifier = -0.5 #Removes the innate tax bonus
 	global_unrest = 5.00 #Removes half of the unrest reduction
 	technology_cost = 0.50 #Removes half of the tech bonus, potentially costing the Omega a lot of MP
-	#Add localization!
-
+	unjustified_demands = -0.5 #Might push the Omega to take more in peace deals
 
 
 }
