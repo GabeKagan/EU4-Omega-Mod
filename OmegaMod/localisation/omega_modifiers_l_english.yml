@@ -5,3 +5,7 @@ l_english:
  desc_omega_lower_difficulty: "Someone couldn't take the heat. The Omega no longer has access to its full complement of bonuses."
  omega_higher_difficulty: "Strengthened Omega"
  desc_omega_higher_difficulty: "The Omega is now even more ridiculously overpowered. It might be a good time to take a few centuries' vacation in outer space."
+ small_omega_buff: "Small Omega Bonuses"
+ desc_small_omega_buff: "The Omega is recieving a relatively small boost to its power to compensate for its lack of provinces."
+ tiny_omega_buff: "Tiny Omega Bonuses"
+ desc_tiny_omega_buff: "The Omega is recieving a massive boost to its power because it is so small it might get annexed otherwise."

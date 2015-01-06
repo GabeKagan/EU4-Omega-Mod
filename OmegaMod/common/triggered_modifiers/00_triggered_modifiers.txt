@@ -555,3 +555,35 @@ omega_higher_difficulty {
 	global_trade_goods_size = 0.5 
 	stability_cost_modifier = -0.20
 }
+
+small_omega_buff {
+
+	potential = {
+		tag = OME
+	}
+
+	trigger = {
+		NOT = { num_of_cities = 6 } #These buffs disappear if the Omega has more than 5 provinecs.
+	}
+
+	land_forcelimit_modifier = 0.25 #I don't want a 6 province Omega to be significantly weaker than a 5 province one.
+	discipline = 0.1
+	global_tax_modifier = 0.25
+
+}
+
+tiny_omega_buff {
+
+	potential = {
+		tag = OME
+	}
+
+	trigger = {
+		NOT = { num_of_cities = 2 } #If the Omega is extremely small, it needs even more buffs.
+	}
+
+	land_forcelimit_modifier = 1 
+	discipline = 0.1
+	global_tax_modifier = 0.5
+
+}
