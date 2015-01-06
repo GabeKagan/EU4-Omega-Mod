@@ -1,0 +1,10 @@
+l_english:
+ flavor_ome.1.t: "Genesis of the Omega"
+ flavor_ome.1.d: "Our country's citizens wake from horrible nightmares of demoniac conquest. While our scholars and clergy struggle to interpret this, scattered rumors from beyond our borders speak of a ruler giving their country over to a force more terrible than the Frank, the Turk, and the Mongol combined. It is unclear how long we have to prepare for its arrival."
+ flavor_ome.1.a: "Oh dear."
+ flavor_ome.2.t: "No Protectorates for the Omega (AI)"
+ flavor_ome.2.d: "This event occasionally turns any protectorates the Omega forms into straight up vassals, in an attempt to speed up its attempts at conquest."
+ flavor_ome.2.a: "We must refrain from indirect rule"
+ flavor_ome.3.t: "Free Explorers for the Omega (AI)"
+ flavor_ome.3.d: "I'm having trouble making sure the Omega takes the Exploration idea group. As a stopgap, they get a free explorer every now and then, so long as they have coastal provinces."
+ flavor_ome.3.a: "Kludges are pretty great."

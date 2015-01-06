@@ -5,8 +5,8 @@ namespace = flavor_ome
 #Turns a random AI country into the Omega
 country_event = {
     id = flavor_ome.1
-    title = flavor_ome_1_t
-    description = flavor_ome_1_d
+    title = flavor_ome.1.t
+    description = flavor_ome.1.d
     picture = RELIGIOUS_TURMOIL_eventPicture
     fire_only_once = yes
 
