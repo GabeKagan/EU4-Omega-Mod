@@ -8,3 +8,5 @@ l_english:
  flavor_ome.3.t: "Free Explorers for the Omega (AI)"
  flavor_ome.3.d: "I'm having trouble making sure the Omega takes the Exploration idea group. As a stopgap, they get a free explorer every now and then, so long as they have coastal provinces."
  flavor_ome.3.a: "Kludges are pretty great."
+ omegan: "Omegan"
+ omegan_desc: "With the Omegan technology group, technologies are 100% less expensive, albeit only via triggered modifier."
