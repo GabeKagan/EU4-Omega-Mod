@@ -1,6 +1,6 @@
 #Country Name: Please see filename.
 
-graphical_culture = asiangfx
+graphical_culture = westerngfx
 
 color = { 192  192  192 }
 
@@ -16,20 +16,21 @@ historical_idea_groups = {
 }
 
 historical_units = {
-	chinese_longspear
-	eastern_bow
-	chinese_footsoldier
-	chinese_steppe
-	asian_arquebusier
-	asian_charge_cavalry
-	asian_mass_infantry
-	manchu_banner
-	han_banner
-	asian_musketeer
-	chinese_dragoon
-	reformed_asian_musketeer
-	reformed_asian_cavalry
-	reformed_manchu_rifle
+	western_medieval_infantry
+	chevauchee
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	french_caracolle
+	anglofrench_line
+	french_dragoon
+	french_bluecoat
+	french_cuirassier
+	french_impulse
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
 }
 
 monarch_names = {
