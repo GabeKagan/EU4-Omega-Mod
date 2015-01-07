@@ -5779,11 +5779,11 @@ OME_ideas = {
 
 	overwhelming_innovation = {
 		idea_cost = -1.00
-		global_autonomy = -0.50
+		diplomatic_reputation = 6
 	}
 	native_assimilation = {
 		colonists = 2
-		diplomatic_reputation = 6
+		fabricate_claims_time = -0.75 #Could this make the Omega more aggressive?
 	}
 	overwhelming_army = {
 		global_manpower_modifier = 1.00

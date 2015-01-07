@@ -519,6 +519,8 @@ omega_permanent_bonuses {
 	legitimacy = 1
 	republican_tradition = 1
 	global_tax_modifier = 0.5
+	unjustified_demands = -0.5 #Might push the Omega to take more in peace deals
+	global_autonomy = -0.50	#Originally part of their traditions
 	#Move some things from the ideas here.
 
 }
@@ -537,7 +539,6 @@ omega_lower_difficulty {
 	global_tax_modifier = -0.5 #Removes the innate tax bonus
 	global_unrest = 5.00 #Removes half of the unrest reduction
 	technology_cost = 0.50 #Removes half of the tech bonus, potentially costing the Omega a lot of MP
-	unjustified_demands = -0.5 #Might push the Omega to take more in peace deals
 
 
 }
