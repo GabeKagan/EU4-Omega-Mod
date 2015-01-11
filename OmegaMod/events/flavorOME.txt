@@ -23,8 +23,18 @@ country_event = {
     option = { 
         name = flavor_ome.1.a
         random_country {
-            ai = yes #Because turning a human into the Omega would be unfun. {
 
+            limit {
+                ai = yes #Because turning a human into the Omega would be unfun.
+                #This should prevent the Omega from spawning from a player's subject.
+                NOT = {
+                    any_country = {
+                        overlord_of = ROOT
+                    }
+                }
+            }
+            #Effects begin here.
+            {
                 change_technology_group = omegan
                 change_tag = OME
                 change_unit_type = western #Placeholder
@@ -55,7 +65,26 @@ country_event = {
                     add_province_manpower = 5 
                 }
 
-                #Perhaps add a "difficulty" event that adjusts the strength of the Omega's bonuses?
+                #If the Omega starts out as a vassal of an AI, it inherits its overlord.
+                #This code doesn't work yet; that's why it's commented out.
+                #any_country {
+                #    limit = {
+                #        #overlord_of = OME
+                #        ai = yes #Safety measure to prevent the Omega from insta-inheriting the player, although the Omega should not spawn from a player's vassal.
+                #    }
+                #    
+                #    free_vassal = OME #Initial step, good for debugging
+                #    set_country_flag = omegan_relocation
+                #}
+
+                #OME = {
+                #    inherit = {
+                #        any_country {
+                #            has_country_flag = omegan_relocation
+                #        }
+                #    }
+                #}
+                #Devassalization block ends here
             }
         }
     }
