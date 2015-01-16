@@ -33,37 +33,36 @@ country_event = {
                     }
                 }
             }
+
             #Effects begin here.
-            {
-                change_technology_group = omegan
-                change_tag = OME
-                change_unit_type = western #Placeholder
-                swap_free_idea_group = yes #Get the Omega ideas
+            change_technology_group = omegan
+            change_tag = OME
+            change_unit_type = western #Placeholder
+            swap_free_idea_group = yes #Get the Omega ideas
 
-                every_province = {
-                    limit = {
-                        owned_by = OME
-                        }
-                    add_core = OME #Omega should get cores on its "host" nation
+            every_province = {
+                limit = {
+                    owned_by = OME
                 }
+                add_core = OME #Omega should get cores on its "host" nation
+            }
 
-                #If the Omega is tribal, turn it into a monarchy and remove any native councils
-                if {
-                    owner = {
-                        OR = { government = tribal_despotism government = tribal_kingdom government = tribal_federation government = steppe_horde government = siberian_native_council government = tribal_democracy government = native_council }
+            #If the Omega is tribal, turn it into a monarchy and remove any native councils
+            if {
+                owner = {
+                    OR = { government = tribal_despotism government = tribal_kingdom government = tribal_federation government = steppe_horde government = siberian_native_council government = tribal_democracy government = native_council }
+                }
+                change_government = despotic_monarchy
+                native_mechanic = no #Still needs fixing
+            }
+
+            #Increase the wealth of one of the Omega's provinces, giving it a boost, especially if it's small
+            random_province {
+                limit = {
+                    owned_by = OME
                     }
-                    change_government = despotic_monarchy
-                    native_mechanic = no #Still needs fixing
-                }
-
-                #Increase the wealth of one of the Omega's provinces, giving it a boost, especially if it's small
-                random_province {
-                    limit = {
-                        owned_by = OME
-                        }
-                    add_base_tax = 5
-                    add_province_manpower = 5 
-                }
+                add_base_tax = 5
+                add_province_manpower = 5 
             }
         }
     }
