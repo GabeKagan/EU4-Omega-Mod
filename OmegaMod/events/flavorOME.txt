@@ -64,27 +64,6 @@ country_event = {
                     add_base_tax = 5
                     add_province_manpower = 5 
                 }
-
-                #If the Omega starts out as a vassal of an AI, it inherits its overlord.
-                #This code doesn't work yet; that's why it's commented out.
-                #any_country {
-                #    limit = {
-                #        #overlord_of = OME
-                #        ai = yes #Safety measure to prevent the Omega from insta-inheriting the player, although the Omega should not spawn from a player's vassal.
-                #    }
-                #    
-                #    free_vassal = OME #Initial step, good for debugging
-                #    set_country_flag = omegan_relocation
-                #}
-
-                #OME = {
-                #    inherit = {
-                #        any_country {
-                #            has_country_flag = omegan_relocation
-                #        }
-                #    }
-                #}
-                #Devassalization block ends here
             }
         }
     }
@@ -147,3 +126,54 @@ country_event = {
     }
 }
 
+#Devassalization by event. Option works correctly, trigger does not.
+country_event = {
+    id = flavor_ome.4
+    title = flavor_ome.4.t
+    desc = flavor_ome.4.d
+    picture = RELIGIOUS_TURMOIL_eventPicture
+
+    trigger = {
+        overlord_of = OME
+    }
+
+    mean_time_to_happen = {
+        days = 1 #This event has to happen quickly
+    }
+    option = {
+        name = flavor_ome.4.a #Add localization 
+
+        
+        free_vassal = OME #Initial step. The Omega cannot be vassalized. Ever.
+        break_union = OME #Neither can it be placed into a personal union.
+
+        #Human countries merely lose their relations with the Omega. AIs get eaten alive.
+        hidden_effect = {
+            country_event = {
+                id = flavor_ome.5
+            }
+        }
+    }
+}
+
+country_event = {
+    id = flavor_ome.5
+    title = flavor_ome.5.t
+    desc = flavor_ome.5.d
+    picture = RELIGIOUS_TURMOIL_eventPicture
+
+    is_triggered_only = yes
+
+    trigger = {
+        ai = yes
+    }
+
+    #Woe to the AI that vassalizes or unionizes the Omega.
+    option {
+        name = flavor_ome.5.a
+        OME = {
+            inherit_country = ROOT
+        }
+        
+    }
+}
