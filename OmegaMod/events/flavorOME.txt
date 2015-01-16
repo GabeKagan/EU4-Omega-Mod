@@ -126,7 +126,7 @@ country_event = {
     }
 }
 
-#Devassalization by event. Option works correctly, trigger does not.
+#Devassalization by event.
 country_event = {
     id = flavor_ome.4
     title = flavor_ome.4.t
@@ -172,7 +172,7 @@ country_event = {
     option {
         name = flavor_ome.5.a
         OME = {
-            inherit_country = ROOT
+            inherit = ROOT
         }
         
     }
