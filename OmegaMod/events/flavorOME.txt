@@ -60,7 +60,7 @@ country_event = {
             random_province {
                 limit = {
                     owned_by = OME
-                    }
+                }
                 add_base_tax = 5
                 add_province_manpower = 5 
             }
@@ -69,34 +69,7 @@ country_event = {
 }
 
 
-#Anti-protectorate event
-country_event = {
-    id = flavor_ome.2
-    title = flavor_ome.2.t
-    desc = flavor_ome.2.d
-    picture = RELIGIOUS_TURMOIL_eventPicture
 
-    trigger {
-        tag = OME
-    }
-
-    mean_time_to_happen = {
-        months = 30 #Adjust as needed?
-    }
-
-    option = { 
-        name = flavor_ome.2.a 
-        option = {
-            random_subject_country = {
-                limit = {
-                    is_protectorate = yes 
-                    NOT = { is_colonial_nation_of = OME } Bad things happen if colonial nations get vassalized
-                }
-            }
-            PREV = { vassalize = PREV } #Should ensure diplomatic annexation at some point, at the very least
-        }
-    }
-}
 
 #Free explorers for the Omega once it has ships (based off "Merchant Expedition in RandomEvents.txt"), even if it doesn't take exploration ideas
 
