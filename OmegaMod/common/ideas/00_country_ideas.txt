@@ -5777,13 +5777,15 @@ OME_ideas = {
 	}
 	free = yes		#will be added at load.
 
-	overwhelming_innovation = {
-		idea_cost = -1.00
-		diplomatic_reputation = 6
-	}
 	native_assimilation = {
 		colonists = 2
+		auto_explore_adjacent_to_colony = yes
+		
+	}
+	overwhelming_innovation = {
+		diplomatic_reputation = 6
 		fabricate_claims_time = -0.75 #Could this make the Omega more aggressive?
+		
 	}
 	overwhelming_army = {
 		global_manpower_modifier = 1.00

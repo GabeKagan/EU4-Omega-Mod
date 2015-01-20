@@ -109,3 +109,34 @@ country_event = {
         
     }
 }
+
+#Automatically occurs at the start of the game; allows the player to adjust the Omega's difficulty.
+#This replaces the events formerly in zzz_OmegaDifficultyAdjustment.txt
+country_event = {
+    id = flavor_ome.6
+    title = flavor_ome.6.t
+    desc = flavor_ome.6.d
+    picture = RELIGIOUS_TURMOIL_eventPicture
+
+    is_triggered_only = yes
+
+    trigger = {
+        ai = no
+    }
+
+    option {
+        name = flavor_ome.6.a
+        OME = { set_country_flag = made_omega_easier }
+    }
+
+    option {
+        name = flavor_ome.6.b
+        OME = { set_country_flag = made_omega_harder }
+    }
+
+    option {
+        #Doesn't alter the difficulty at all.
+        name = flavor_ome.6.c
+    }
+
+}

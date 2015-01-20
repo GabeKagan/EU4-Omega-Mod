@@ -1,0 +1,87 @@
+##################################################
+# Difficulty adjustments for the Omega
+##################################################
+
+omega_permanent_bonuses {
+    
+    potential = {
+        tag = OME
+    }
+
+    trigger = {
+        tag = OME
+    }
+
+    legitimacy = 1
+    republican_tradition = 1
+    global_tax_modifier = 0.5
+    unjustified_demands = -0.5 #Might push the Omega to take more in peace deals
+    global_autonomy = -0.50 #Originally part of their traditions
+    idea_cost = -1.00 #Originally part of their first idea
+    
+
+}
+
+omega_lower_difficulty {
+    
+    potential = {
+        tag = OME
+    }
+
+    trigger = {
+        has_country_flag = made_omega_easier
+    }
+
+    #Add more stuff eventually
+    global_tax_modifier = -0.5 #Removes the innate tax bonus
+    global_unrest = 5.00 #Removes half of the unrest reduction
+    technology_cost = 0.50 #Removes half of the tech bonus, potentially costing the Omega a lot of mana
+
+
+}
+
+omega_higher_difficulty {
+    
+    potential = {
+        tag = OME
+    }
+
+    trigger = {
+        has_country_flag = made_omega_harder
+    }
+    global_tax_modifier = 0.5 #Even more money!
+    global_trade_goods_size = 0.5 
+    stability_cost_modifier = -0.20
+}
+
+small_omega_buff {
+
+    potential = {
+        tag = OME
+    }
+
+    trigger = {
+        NOT = { num_of_cities = 6 } #These buffs disappear if the Omega has more than 5 provinecs.
+    }
+
+    land_forcelimit_modifier = 0.25 #I don't want a 6 province Omega to be significantly weaker than a 5 province one.
+    discipline = 0.1
+    global_tax_modifier = 0.25
+
+}
+
+tiny_omega_buff {
+
+    potential = {
+        tag = OME
+    }
+
+    trigger = {
+        NOT = { num_of_cities = 2 } #If the Omega is extremely small, it needs even more buffs.
+    }
+
+    land_forcelimit_modifier = 1 
+    discipline = 0.1
+    global_tax_modifier = 0.5
+
+}
