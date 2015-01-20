@@ -22,6 +22,7 @@ country_event = {
 
     option = { 
         name = flavor_ome.1.a
+        set_global_flag = omega_spawned
         random_country {
 
             limit {
@@ -68,8 +69,5 @@ country_event = {
                 add_province_manpower = 5 
             }
         }
-        #Omega creation events end here. This toggles the difficulty adjustment event.
-        #It doesn't trigger properly, but works when manually called.
-        #ROOT = { country_event = { id = flavor_ome.6 days = 1 } }
     }
 }

@@ -101,7 +101,7 @@ country_event = {
     }
 
     #Woe to the AI that vassalizes or unionizes the Omega.
-    option {
+    option = {
         name = flavor_ome.5.a
         OME = {
             inherit = ROOT
@@ -117,24 +117,28 @@ country_event = {
     title = flavor_ome.6.t
     desc = flavor_ome.6.d
     picture = RELIGIOUS_TURMOIL_eventPicture
-
-    is_triggered_only = yes
+    fire_only_once = yes
 
     trigger = {
-        ai = no
+        NOT = { ai = yes }
+        has_global_flag = omega_spawned
     }
 
-    option {
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    option = {
         name = flavor_ome.6.a
         OME = { set_country_flag = made_omega_easier }
     }
 
-    option {
+    option = {
         name = flavor_ome.6.b
         OME = { set_country_flag = made_omega_harder }
     }
 
-    option {
+    option = {
         #Doesn't alter the difficulty at all.
         name = flavor_ome.6.c
     }
