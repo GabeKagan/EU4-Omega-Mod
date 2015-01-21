@@ -1,0 +1,48 @@
+#Unique Omegan ideas. Spun-off into their own file as part of the push to v0.5!
+
+OME_ideas = {
+    start = {
+        global_unrest = -10 #All of these ideas are deliberately overpowered.
+        technology_cost = -1.00
+    }
+
+    bonus = {
+        accepted_culture_threshold = -0.5   
+    }
+
+    trigger = {
+        tag = OME
+    }
+    free = yes      #will be added at load.
+
+    native_assimilation = {
+        colonists = 2
+        auto_explore_adjacent_to_colony = yes
+        
+    }
+    overwhelming_innovation = {
+        diplomatic_reputation = 6
+        fabricate_claims_time = -0.75 #Could this make the Omega more aggressive?
+        
+    }
+    overwhelming_army = {
+        global_manpower_modifier = 1.00
+        land_forcelimit_modifier = 1.00
+    }
+    unimaginable_wealth = {
+        production_efficiency = 1.0
+        global_trade_income_modifier = 1.0
+    }
+    overwhelming_navy = {
+        naval_forcelimit_modifier = 1.0
+        naval_maintenance_modifier = -0.5
+    }   
+    financial_hegemony = {
+        inflation_reduction = 0.2
+        merchants = 2
+    }
+    futuristic_weaponry = {
+        army_tradition = 1.0
+        discipline = 0.1
+    }
+}

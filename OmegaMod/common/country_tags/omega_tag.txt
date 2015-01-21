@@ -1,0 +1,3 @@
+#This mod only contains one country for now!
+#We can save some disk space and improve mod compatibility by not overwriting the default tags.
+OME = "countries/Omega.txt"
