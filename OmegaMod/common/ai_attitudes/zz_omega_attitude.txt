@@ -5,7 +5,7 @@ attitude_omegan = {
     antagonize = yes
     annex = yes
     weaken = no
-    coalition = yes
+    coalition = no
     warn = no
     vassalize = yes
     ally = no
@@ -23,7 +23,7 @@ attitude_omegan = {
         #The Omega should not seek to antagonize its subjects
         modifier = {
             factor = 0
-            is_subject_of = FROM
+            is_subject_of = OME
         }
     
     }

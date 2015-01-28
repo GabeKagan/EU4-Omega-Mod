@@ -16,8 +16,10 @@ omega_permanent_bonuses {
     republican_tradition = 1
     global_tax_modifier = 0.5
     unjustified_demands = -0.5 #Might push the Omega to take more in peace deals
+    administrative_efficiency = 0.2 #Same reason, really
     global_autonomy = -0.50 #Originally part of their traditions
     idea_cost = -1.00 #Originally part of their first idea
+
     
 
 }
