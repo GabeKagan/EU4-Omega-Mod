@@ -130,20 +130,20 @@ country_event = {
 
     option = {
         name = flavor_ome.6.a
-        custom_tooltip = flavor_ome.6.d
+        custom_tooltip = flavor_ome.6.e
         OME = { set_country_flag = made_omega_easier }
     }
 
     option = {
         name = flavor_ome.6.b
-        custom_tooltip = flavor_ome.6.e
+        custom_tooltip = flavor_ome.6.f
         OME = { set_country_flag = made_omega_harder }
     }
 
     option = {
         #Doesn't alter the difficulty at all.
         name = flavor_ome.6.c
-        custom_tooltip = flavor_ome.6.f
+        custom_tooltip = flavor_ome.6.g
     }
 
 }

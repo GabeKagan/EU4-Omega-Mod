@@ -11,8 +11,7 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        NOT = { exists = OME }
-        is_year = 1444
+        NOT = { exists = OME } #Experimentally removing the year requirement.
         ai = no #Important distinction - this event informs the player of the Omega's birth, but does not turn them into the Omega
     }
 

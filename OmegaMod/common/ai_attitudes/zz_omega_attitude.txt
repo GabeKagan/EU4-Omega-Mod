@@ -1,0 +1,30 @@
+#Omegan - makes the Omega more interested in murdering the crap out of everyone. Shouldn't ever show up for other nations.
+attitude_omegan = {
+    icon = 11
+
+    antagonize = yes
+    annex = yes
+    weaken = no
+    coalition = yes
+    warn = no
+    vassalize = yes
+    ally = no
+    befriend = no
+    protect = no
+    threat = no
+    ignore = no
+
+    chance = {
+        factor = 1
+        modifier = {
+            factor = 99999
+            tag = OME
+        }
+        #The Omega should not seek to antagonize its subjects
+        modifier = {
+            factor = 0
+            is_subject_of = FROM
+        }
+    
+    }
+}
