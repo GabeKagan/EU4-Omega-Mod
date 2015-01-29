@@ -26,5 +26,10 @@ attitude_omegan = {
             factor = 0
             overlord_of = FROM
         }
+
+        modifier = {
+            factor = 0
+            NOT = { monthly_income = 50 }
+        }
     }
 }
