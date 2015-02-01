@@ -5,11 +5,18 @@
 omega_permanent_bonuses {
     
     potential = {
-        tag = OME
+        OR = {
+            tag = OME
+            is_subject_of = OME #Omegan vassals get to be more powerful.
+        }
     }
 
     trigger = {
-        tag = OME
+        OR = {
+            tag = OME
+            is_subject_of = OME
+        }
+        
     }
 
     legitimacy = 1
