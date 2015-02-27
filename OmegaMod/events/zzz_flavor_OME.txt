@@ -147,3 +147,56 @@ country_event = {
     }
 
 }
+
+#Debug event! This turns your country into the Omega and literally will not happen unless called from the console.
+country_event = {
+    id = flavor_ome.7
+    title = flavor_ome.7.t
+    desc = flavor_ome.7.d
+    picture = RELIGIOUS_TURMOIL_eventPicture
+
+    is_triggered_only = yes
+
+    trigger = {
+        ai = no
+    }
+
+    option = { 
+        name = flavor_ome.7.a
+        set_global_flag = omega_spawned
+
+        #No limits if you're going to turn your own country into the Omega, but I don't recommend actually playing as it. 
+        #Effects begin here.
+        change_technology_group = omegan
+        change_tag = OME
+        change_unit_type = western #Placeholder
+        swap_free_idea_group = yes #Get the Omega ideas
+
+        every_province = {
+            limit = {
+                owned_by = OME
+            }
+            add_core = OME #Omega should get cores on its "host" nation
+        }
+
+        #If the Omega is tribal, turn it into a monarchy and remove any native councils
+        if {
+            owner = {
+                OR = { government = tribal_despotism government = tribal_kingdom government = tribal_federation government = steppe_horde government = siberian_native_council government = tribal_democracy government = native_council }
+            }
+            change_government = despotic_monarchy
+            native_mechanic = no #Still needs fixing
+        }
+
+        #Increase the wealth of one of the Omega's provinces, giving it a boost, especially if it's small
+        random_province {
+            limit = {
+                owned_by = OME
+            }
+            add_base_tax = 5
+            add_province_manpower = 5 
+        }
+        
+    }
+
+}
