@@ -188,6 +188,17 @@ country_event = {
             native_mechanic = no #Still needs fixing
         }
 
+        #If the Omega has one of the new Amerindian religions in 1.10, give it all the religious reforms once we figure out how.
+        if {
+            OR = { 
+                religion = nahuatl 
+                religion = inti 
+                religion = mesoamerican_religion
+            }
+            #But for now, we do nothing.
+            #change_religion = shamanism
+        }
+
         #Increase the wealth of one of the Omega's provinces, giving it a boost, especially if it's small
         random_province {
             limit = {
