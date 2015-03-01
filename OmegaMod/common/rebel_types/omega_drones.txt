@@ -3,7 +3,7 @@
 # When they win a siege, they change the culture of the province to the new Omegan culture; the Omega also gets cores on them.
 # If they can enforce their demands, the entire country is annexed by the Omega. This is definitely cruel, and I might adjust this down if I feel it necessary.
 # Currently, they can spawn by debug event, but they will not appear naturally.
-# Furthermore, the game crashes when I attempt to enter the negotiation screen, or when a drone sieges a province.
+
 
 omega_drones = {
     area = nation
@@ -35,20 +35,22 @@ omega_drones = {
     #Omega drones should only spawn on normal or higher difficulty, and only for countries at war with the Omega.
     #However, when they can spawn, they should spawn exclusively.
     spawn_chance = {
-        factor = 999
+        factor = 1
+
+        #Get these modifiers working!
+        #modifier = {
+        #    factor = 0
+        #    has_global_flag = no_drone_rebels
+        #}
+        #modifier = {
+        #    factor = 0
+        #    owner = OME #Pretty sure the Omega can keep drones in its territory under control...
+        #}
+
+        #This one seems to work.
         modifier = {
-            factor = 0
-            has_global_flag = no_drone_rebels
-        }
-        modifier = {
-            factor = 0
-            owner = OME #Pretty sure the Omega can keep drones in its territory under control...
-        }
-        modifier = {
-            factor = 0
-            NOT = { 
-                owner = { war_with = OME } 
-            }
+            factor = 9999
+            owner = { war_with = OME }
         }
     }
 
@@ -97,9 +99,8 @@ omega_drones = {
     demands_enforced_effect = {
         add_prestige = -200
         every_owned_province = {
-        #    limit = {
-        #        has_rebel_faction = REB
-        #    }
+            #Uncomment this as a test once the drones spawn properly.
+            #change_culture = omegan 
             add_core = OME
             cede_province = OME
         }
