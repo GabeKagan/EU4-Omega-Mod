@@ -7,7 +7,7 @@ OME_ideas = {
     }
 
     bonus = {
-        accepted_culture_threshold = -0.5   
+        culture_conversion_cost = -0.5 #Since the Omega now has its own culture, this should make it easier to spread.
     }
 
     trigger = {

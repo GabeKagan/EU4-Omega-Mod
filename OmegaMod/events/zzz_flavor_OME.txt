@@ -132,7 +132,7 @@ country_event = {
         name = flavor_ome.6.a
         custom_tooltip = flavor_ome.6.e
         OME = { set_country_flag = made_omega_easier }
-        set_global_flag = no_drone_rebels
+        #set_global_flag = no_drone_rebels
     }
 
     option = {
@@ -230,7 +230,7 @@ country_event = {
 
     option = {
         name = flavor_ome.8
-        #The drones need you. They look up to you.
+        #The drones need you to ensure their existence. They look up to you.
         random_owned_province = {
             spawn_rebels = {
                 type = omega_drones
