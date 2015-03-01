@@ -2,6 +2,8 @@
 # The lore here is that the Omega will send undercover agents into countries they're at war with to kidnap citizens and assimilate them into the Omegan hive mind.
 # When they win a siege, they change the culture of the province to the new Omegan culture; the Omega also gets cores on them.
 # If they can enforce their demands, the entire country is annexed by the Omega. This is definitely cruel, and I might adjust this down if I feel it necessary.
+# Currently, they can spawn by debug event, but they will not appear naturally.
+# Furthermore, the game crashes when I attempt to enter the negotiation screen, or when a drone sieges a province.
 
 omega_drones = {
     area = nation
@@ -24,9 +26,11 @@ omega_drones = {
 
     morale = 1.2
 
+    # Possible handle actions
     handle_action_negotiate = no
     handle_action_stability = yes
-    handle_action_change_culture = yes 
+    handle_action_build_core = yes
+    handle_action_send_missionary = yes 
 
     #Omega drones should only spawn on normal or higher difficulty, and only for countries at war with the Omega.
     #However, when they can spawn, they should spawn exclusively.
@@ -34,7 +38,7 @@ omega_drones = {
         factor = 999
         modifier = {
             factor = 0
-            OME = { set_country_flag = made_omega_easier }
+            has_global_flag = no_drone_rebels
         }
         modifier = {
             factor = 0
@@ -67,9 +71,13 @@ omega_drones = {
         always = yes #Only for the sake of having something here
     }
     siege_won_effect = {
-        change_culture = omegan
+        #change_culture = omegan #Apparently, you can't change culture on rebel sieges.
         add_core = OME
         #Possibly try to spawn another rebel stack every time these guys win?
+        spawn_rebels = {
+            type = omega_drones
+            size = 5
+        }
     }
 
     # Country scope
@@ -87,7 +95,11 @@ omega_drones = {
 
     # Country Scope 
     demands_enforced_effect = {
+        add_prestige = -200
         every_owned_province = {
+        #    limit = {
+        #        has_rebel_faction = REB
+        #    }
             add_core = OME
             cede_province = OME
         }
