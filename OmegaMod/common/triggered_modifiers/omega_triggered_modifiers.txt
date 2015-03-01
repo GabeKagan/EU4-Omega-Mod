@@ -23,7 +23,7 @@ omega_permanent_bonuses {
     republican_tradition = 1
     global_tax_modifier = 0.5
     unjustified_demands = -0.5 #Might push the Omega to take more in peace deals
-    administrative_efficiency = 0.2 #Same reason, really
+    administrative_efficiency = 0.2 #Same reason, really. Doesn't work.
     global_autonomy = -0.50 #Originally part of their traditions
     idea_cost = -1.00 #Originally part of their first idea
 
@@ -92,5 +92,21 @@ tiny_omega_buff {
     land_forcelimit_modifier = 1 
     discipline = 0.1
     global_tax_modifier = 0.5
+
+}
+
+#If the Omega is hard, merely fighting it will demoralize and destabilize your country.
+fighting_hard_omega {
+    
+    potential = {
+        OME = { set_country_flag = made_omega_harder }
+    }
+
+    trigger = {
+        war_with = OME
+    }
+
+    global_unrest = 5.00
+    legitimacy = -1
 
 }

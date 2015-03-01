@@ -1,3 +1,95 @@
 # Omega drones.
 # The lore here is that the Omega will send undercover agents into countries they're at war with to kidnap citizens and assimilate them into the Omegan hive mind.
-# When they win a siege, they change the culture of the province to the new Omegan culture.
+# When they win a siege, they change the culture of the province to the new Omegan culture; the Omega also gets cores on them.
+# If they can enforce their demands, the entire country is annexed by the Omega. This is definitely cruel, and I might adjust this down if I feel it necessary.
+
+omega_drones = {
+    area = nation
+    government = any
+    defection = yes
+    defect_delay = 24 #This will cause border gore, but it's worth a try.
+    independence = none
+    gfx_type = culture_owner
+
+    resilient = yes #Oh, they're nasty.
+    reinforcing = yes
+    general = yes
+    smart = yes
+    disband_on_leader_death = no 
+    will_relocate = yes 
+
+    artillery = 0.1
+    infantry = 0.6
+    cavalry = 0.3
+
+    morale = 1.2
+
+    handle_action_negotiate = no
+    handle_action_stability = yes
+    handle_action_change_culture = yes 
+
+    #Omega drones should only spawn on normal or higher difficulty, and only for countries at war with the Omega.
+    #However, when they can spawn, they should spawn exclusively.
+    spawn_chance = {
+        factor = 999
+        modifier = {
+            factor = 0
+            OME = { set_country_flag = made_omega_easier }
+        }
+        modifier = {
+            factor = 0
+            owner = OME #Pretty sure the Omega can keep drones in its territory under control...
+        }
+        modifier = {
+            factor = 0
+            NOT = { 
+                owner = { war_with = OME } 
+            }
+        }
+    }
+
+    # This is checked for EACH province in the Area of Operations
+    # Maybe more complicated movement logic later?
+    movement_evaluation = {
+        factor = 1
+        modifier = {
+            factor = 0.001
+            controlled_by = REB
+        }
+        modifier = {
+            factor = 0
+            owner = OME #Drone rebels will not move into Omegan territory.
+        }
+    }
+
+    # Province Scope
+    siege_won_trigger = {
+        always = yes #Only for the sake of having something here
+    }
+    siege_won_effect = {
+        change_culture = omegan
+        add_core = OME
+        #Possibly try to spawn another rebel stack every time these guys win?
+    }
+
+    # Country scope
+    can_negotiate_trigger = {
+        always = no
+    }
+    
+    # Country scope
+    can_enforce_trigger = {
+        always = yes
+    }
+
+    # Localisation for their demands; see templates in text_l_english.yml
+    demands_description = "omega_drones_demand" 
+
+    # Country Scope 
+    demands_enforced_effect = {
+        every_owned_province = {
+            add_core = OME
+            cede_province = OME
+        }
+    }
+}

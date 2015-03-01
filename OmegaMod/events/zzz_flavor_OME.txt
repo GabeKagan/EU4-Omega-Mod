@@ -213,3 +213,29 @@ country_event = {
     }
 
 }
+
+#Debug event! Spawns some Omega drones.
+country_event = {
+    id = flavor_ome.8
+    title = flavor_ome.8.t
+    desc = flavor_ome.8.d
+    picture = RELIGIOUS_TURMOIL_eventPicture
+
+    is_triggered_only = yes
+
+    trigger = {
+        ai = no
+    }
+
+    option = {
+        name = flavor_ome.8
+        #The drones need you. They look up to you.
+        random_owned_province = {
+            spawn_rebels = {
+                type = omega_drones
+                size = 10
+            }
+        }
+    }
+    
+}
