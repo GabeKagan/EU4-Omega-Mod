@@ -1,0 +1,21 @@
+# The new, shiny Omegan culture! 
+# This will be used primarily to give the Omega a new and terrifying way to blob.
+omegan_group = {
+    graphical_culture = westerngfx
+
+    omegan_culture = {
+        primary = OME
+        #These names shouldn't show up too often, I don't think.
+        dynasty_names = {
+            "Slavemaker" "Locutus"
+        }
+
+        male_names = {
+            "Supreme Controller" "Supreme Overlord"
+        }
+
+        female_names = {
+            "Supreme Matriarch" "Supreme Overlady"
+        }
+    }
+}

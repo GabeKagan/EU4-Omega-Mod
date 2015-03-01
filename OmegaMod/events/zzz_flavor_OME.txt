@@ -171,12 +171,14 @@ country_event = {
         change_tag = OME
         change_unit_type = western #Placeholder
         swap_free_idea_group = yes #Get the Omega ideas
+        change_primary_culture = omegan_culture #Unique to the Omega at first; can be spread once rebels are implemented
 
         every_province = {
             limit = {
                 owned_by = OME
             }
             add_core = OME #Omega should get cores on its "host" nation
+            change_culture = omegan_culture
         }
 
         #If the Omega is tribal, turn it into a monarchy and remove any native councils
