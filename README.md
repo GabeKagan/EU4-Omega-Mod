@@ -3,7 +3,7 @@ EU4-Omega-Mod
 
 A mod for Europa Universalis IV that turns a random AI country into a ridiculously overpowered endboss. 
 
-Currently in beta (v0.7). Most basic functionality has been implemented, but there's a lot of room for further improvements. Besides some minor changes for El Dorado, and some small balance and localization changes, 0.7 also introduces the new and terrifying Drone rebels, who can spawn any time you're at war with the Omega. If they get out of control, they'll grow in numbers every time they win a siege, and give the Omega free cores on your provinces. Don't let them break your country - if THAT happens, you get annexed by the Omega instantly. Most likely, this is going to be a greater threat to the AI than to human players.
+Currently in beta (v0.71). Most basic functionality has been implemented, but there's a lot of room for further improvements. Version 0.71 is primarily a 1.11 compliance patch; it also adds some localization text (mostly Omegan leader/unit names) and adjusts Omegan drone rebels.
 
 A list of the most important planned changes follows:
 
