@@ -58,9 +58,26 @@ omega_drones = {
             factor = 0.001
             controlled_by = REB
         }
+        #Omega drones don't move between nations, so this might not be necessary.
+        #modifier = {
+        #    factor = 0
+        #    owner = OME #Drone rebels will not move into Omegan territory.
+        #}
         modifier = {
-            factor = 0
-            owner = OME #Drone rebels will not move into Omegan territory.
+            factor = 1.5
+            unrest = 2
+        }
+        modifier = {
+            factor = 1.5
+            unrest = 4
+        }
+        modifier = {
+            factor = 1.5
+            unrest = 6
+        }
+        modifier = {
+            factor = 2.0
+            is_capital = yes
         }
     }
 
@@ -71,7 +88,8 @@ omega_drones = {
     siege_won_effect = {
         #change_culture = omegan #Apparently, you can't change culture on rebel sieges.
         add_core = OME
-        #Reduced the severity of siege-induced Omega drones.
+        #Reduced the severity of siege-induced Omega drones, but moving them around ought to be amazing.
+        #random_owned_province doesn't seem to work.
         spawn_rebels = {
             type = omega_drones
             size = 2
