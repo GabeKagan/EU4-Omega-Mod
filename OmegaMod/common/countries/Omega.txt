@@ -92,7 +92,7 @@ ship_names = {
 	Fearmonger Goremonger Hatred Inferno Justice
 	Kill "Looming Terror" Mordor Nastiness
 	"Overwhelming Force" Omega Pain "Queen of Terror" Ruination Slaughter
-	Terror Unmaker "Vault of Deathoom" "Warrior's Folly" "X Death"
+	Terror Unmaker "Vault of Doom" "Warrior's Folly" "X Death"
 	"Your Country's Doom" Zuul
 }
 

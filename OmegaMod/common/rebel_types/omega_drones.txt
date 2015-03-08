@@ -8,8 +8,7 @@
 omega_drones = {
     area = nation
     government = any
-    defection = yes
-    defect_delay = 24 #This will cause border gore, but it's worth a try.
+    defection = no #Defection should now be an all or nothing proposition, unless the Omega wants to conquer its cores.
     independence = none
     unit_transfer = yes #The Omega will get a nice boost to their armies from defectors, presumably.
     gfx_type = culture_owner
@@ -19,7 +18,7 @@ omega_drones = {
     general = yes
     smart = yes
     disband_on_leader_death = no 
-    will_relocate = yes 
+    will_relocate = no #This seems to have caused a crash. 
 
     artillery = 0.1
     infantry = 0.6
@@ -72,10 +71,10 @@ omega_drones = {
     siege_won_effect = {
         #change_culture = omegan #Apparently, you can't change culture on rebel sieges.
         add_core = OME
-        #This might be a bit overpowered.
+        #Reduced the severity of siege-induced Omega drones.
         spawn_rebels = {
             type = omega_drones
-            size = 5
+            size = 2
         }
     }
 
