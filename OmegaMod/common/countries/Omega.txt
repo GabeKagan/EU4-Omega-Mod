@@ -56,6 +56,17 @@ monarch_names = {
 	"Khorne #0" = 5
 	"Sauron #0" = 5
 
+	# New names for 1.11. References usually aren't this blatant... oh wait, actually they are.
+	"Ozai #0" = 5
+	"Amon #0" = 5
+	"Unavaatu #0" = 5
+	"Zaheer #0" = 5
+	"Kuvira #0" = -5
+	
+	"Maleficent #0" = -5
+	"Ursula #0" = -5
+	"Chernabog #0" = 5
+
 }
 
 leader_names = {
@@ -71,6 +82,9 @@ leader_names = {
 	Demoniac
 	Hellbringer
 	"Death Incarnate"
+	Blooddrinker
+	Murderface
+	Harbinger
 }
 
 ship_names = {
@@ -94,5 +108,6 @@ army_names {
 fleet_names {
 	"Armada of the Omega" "Armada of Terror"
 	"Armada of Destruction" "Armada of Domination"
-	"Armada of Ruination"
+	"Armada of Ruination" "Armada of Perdition"
+	"Armada of the Harbinger"
 }
