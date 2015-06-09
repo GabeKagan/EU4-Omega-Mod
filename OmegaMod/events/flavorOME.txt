@@ -40,7 +40,7 @@ country_event = {
             #Effects begin here.
             change_technology_group = omegan
             change_tag = OME
-            change_unit_type = western #Placeholder
+            change_unit_type = western #Placeholder, since we're eventually going to make an Omegan unit group.
             swap_free_idea_group = yes #Get the Omega ideas
             change_primary_culture = omegan_culture #Unique to the Omega at first; can be spread once rebels are implemented
 
@@ -61,13 +61,14 @@ country_event = {
                 native_mechanic = no #Still needs fixing
             }
 
-            #Increase the wealth of one of the Omega's provinces, giving it a boost, especially if it's small
+            #Increase the wealth of one of the Omega's provinces, giving it a boost, especially if it's small.
             random_province {
                 limit = {
                     owned_by = OME
                 }
                 add_base_tax = 5
-                add_province_manpower = 5
+                add_base_production = 5 #New for 1.12.
+                add_base_manpower = 5
             }
         }
     }
