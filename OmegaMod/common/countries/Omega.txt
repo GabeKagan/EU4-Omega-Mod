@@ -5,9 +5,9 @@ graphical_culture = westerngfx
 color = { 192  192  192 }
 
 historical_idea_groups = {
-	exploration_ideas
-	expansion_ideas
 	trade_ideas
+	quality_ideas
+	expansion_ideas
 	quantity_ideas
 	offensive_ideas
 	administrative_ideas
@@ -66,6 +66,9 @@ monarch_names = {
 	"Maleficent #0" = -5
 	"Ursula #0" = -5
 	"Chernabog #0" = 5
+	# New names for 1.12.
+	"Kalakadan" = 10
+	"Calcium Dan" = 1
 
 }
 
@@ -102,12 +105,14 @@ army_names {
 	"Legion of Torment"
 	"Legion of Terror"
 	"Legion of Horror"
-	"$PROVINCE Legion"
+	"Legion of Killing the Human Player"
+	"Legion of Ruination"
+	"Legion of Destruction"
 }
 
 fleet_names {
 	"Armada of the Omega" "Armada of Terror"
 	"Armada of Destruction" "Armada of Domination"
 	"Armada of Ruination" "Armada of Perdition"
-	"Armada of the Harbinger"
+	"Armada of the Harbinger" "Armada of Doom"
 }

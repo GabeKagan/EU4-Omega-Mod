@@ -58,7 +58,7 @@ country_event = {
                     OR = { government = tribal_despotism government = tribal_kingdom government = tribal_federation government = steppe_horde government = siberian_native_council government = tribal_democracy government = native_council }
                 }
                 change_government = despotic_monarchy
-                native_mechanic = no #Still needs fixing
+                #native_mechanic = no #Still needs fixing
             }
 
             #Increase the wealth of one of the Omega's provinces, giving it a boost, especially if it's small.
@@ -69,6 +69,7 @@ country_event = {
                 add_base_tax = 5
                 add_base_production = 5 #New for 1.12.
                 add_base_manpower = 5
+                change_province_name = "Mordor" #Also new for 1.12
             }
         }
     }

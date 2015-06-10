@@ -99,7 +99,7 @@ tiny_omega_buff {
 fighting_hard_omega {
     
     potential = {
-        OME = { set_country_flag = made_omega_harder }
+        OME = { has_country_flag = made_omega_harder }
     }
 
     trigger = {
