@@ -3,7 +3,7 @@ EU4-Omega-Mod
 
 A mod for Europa Universalis IV that turns a random AI country into a ridiculously overpowered endboss. 
 
-Currently in beta (v0.71). Most basic functionality has been implemented, but there's a lot of room for further improvements. Version 0.71 is primarily a 1.11 compliance patch; it also adds some localization text (mostly Omegan leader/unit names) and adjusts Omegan drone rebels.
+Currently in beta (v0.71). Most basic functionality has been implemented, but there's a lot of room for further improvement.Version 0.72 adds a menu logo, some minor bugfixes and balance changes, and adds nominal 1.12/Common Sense compatibility.
 
 A list of the most important planned changes follows:
 

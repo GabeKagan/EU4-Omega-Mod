@@ -43,6 +43,7 @@ country_event = {
             change_unit_type = western #Placeholder, since we're eventually going to make an Omegan unit group.
             swap_free_idea_group = yes #Get the Omega ideas
             change_primary_culture = omegan_culture #Unique to the Omega at first; can be spread once rebels are implemented
+            set_government_rank = 3 #New for 1.12
 
             every_province = {
                 limit = {
