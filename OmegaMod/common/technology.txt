@@ -69,7 +69,7 @@ groups = {
 		cav_to_inf_ratio = 0.5
 	}
 	omegan = {
-		modifier = 0
+		modifier = 0.2 #Penalty added for 0.8 to prevent Old World protectorates; removed by Omega's national traditions
 		start_level = 3
 		cav_to_inf_ratio = 0.5
 		trade_company = yes

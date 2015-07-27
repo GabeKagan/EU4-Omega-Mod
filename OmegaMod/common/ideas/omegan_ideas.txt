@@ -3,7 +3,7 @@
 OME_ideas = {
     start = {
         global_unrest = -10 #All of these ideas are deliberately overpowered.
-        technology_cost = -1.00
+        technology_cost = -1.20
     }
 
     bonus = {

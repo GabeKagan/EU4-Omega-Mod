@@ -5,9 +5,12 @@ omegan_group = {
 
     omegan_culture = {
         primary = OME
-        #These names shouldn't show up too often, I don't think.
+        #These names shouldn't show up too often, I don't think. Some are copied from the country file.
         dynasty_names = {
-            "Slavemaker" "Locutus"
+            "Slavemaker" "Locutus"  "Battlemaster" Warmaster"
+            "Starkiller" "Kingslayer" "Doombringer" "Panzerfaust"
+            "Spinebreaker" "Devilkin" "Demoniac" "Hellbringer"
+            "Blooddrinker" "Murderface" "Harbinger"
         }
 
         male_names = {

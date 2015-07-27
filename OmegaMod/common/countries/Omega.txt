@@ -66,9 +66,13 @@ monarch_names = {
 	"Maleficent #0" = -5
 	"Ursula #0" = -5
 	"Chernabog #0" = 5
+
 	# New names for 1.12.
-	"Kalakadan" = 10
-	"Calcium Dan" = 1
+	"Kalakadan #0" = 10
+	"Calcium Dan #0" = 1
+	"Johnny Gat #0" = 5
+	"Zinyak #0" = 5
+
 
 }
 
