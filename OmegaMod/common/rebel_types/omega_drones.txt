@@ -2,13 +2,12 @@
 # The lore here is that the Omega will send undercover agents into countries they're at war with to kidnap citizens and assimilate them into the Omegan hive mind.
 # When they win a siege, they change the culture of the province to the new Omegan culture; the Omega also gets cores on them.
 # If they can enforce their demands, the entire country is annexed by the Omega. This is definitely cruel, and I might adjust this down if I feel it necessary.
-# Currently, they can spawn by debug event, but they will not appear naturally.
 
 
 omega_drones = {
     area = nation
     government = any
-    defection = no #Defection should now be an all or nothing proposition, unless the Omega wants to conquer its cores.
+    defection = OME #This does not prevent defection, and I do not know why this is the case.
     independence = none
     unit_transfer = yes #The Omega will get a nice boost to their armies from defectors, presumably.
     gfx_type = culture_owner
@@ -40,13 +39,17 @@ omega_drones = {
         #Get these modifiers working!
         #modifier = {
         #    factor = 0
-        #    has_global_flag = no_drone_rebels
+        #    owner = { has_global_flag = no_drone_rebels }
         #}
+
 
         #This one seems to work. There used to be an "owner != OME" type thing, but this should obsolete it.
         modifier = {
             factor = 9999
-            owner = { war_with = OME }
+            owner = { 
+                war_with = OME 
+                is_neighbor_of = OME #This should make the Omega's more sensical in some ways.   
+            }
         }
     }
 
@@ -76,8 +79,8 @@ omega_drones = {
             unrest = 6
         }
         modifier = {
-            factor = 2.0
-            is_capital = yes
+            factor = 10
+            is_capital = yes #They should favor the capital but not quite make a beeline for it.
         }
     }
 
@@ -92,7 +95,7 @@ omega_drones = {
         #random_owned_province doesn't seem to work.
         spawn_rebels = {
             type = omega_drones
-            size = 2
+            size = 1 #Because sieging is potentially so much easier from 1.12 onwards.
         }
     }
 
