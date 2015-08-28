@@ -7,7 +7,7 @@ omega_permanent_bonuses {
     potential = {
         OR = {
             tag = OME
-            is_subject_of = OME #Omegan vassals get to be more powerful.
+            is_subject_of = OME #Omegan vassals get to be more powerful than non-Omegan vassals.
         }
     }
 
@@ -26,6 +26,8 @@ omega_permanent_bonuses {
     province_warscore_cost = -0.2 #A replacement for the failed administrative efficiency buff in older versions.
     global_autonomy = -0.50 #Originally part of their traditions
     idea_cost = -1.00 #Originally part of their first idea
+    land_morale = 0.20 #Generally useful to the armies of the Omega
+    free_leader_pool = 3
 
     
 

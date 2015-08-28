@@ -70,7 +70,26 @@ country_event = {
                 add_base_tax = 5
                 add_base_production = 5 #New for 1.12.
                 add_base_manpower = 5
-                change_province_name = "Mordor" #Also new for 1.12
+                # A couple of name options.
+                random_list = {
+                    25 = {
+                        change_province_name = "Mordor" #Also new for 1.12
+                    }
+                    #These are new for 1.13
+                    25 = {
+                        change_province_name = "Tartarus"
+                    }                    
+                    25 = {
+                        change_province_name = "Gehenna"
+                    }                    
+                    24 = {
+                        change_province_name = "Cerberon" #Oh man. A Quake II reference.
+                    }                    
+                    1 = {
+                        change_province_name = "Butt Land" #This one is just silly.
+                    }
+                }
+                
             }
         }
     }
