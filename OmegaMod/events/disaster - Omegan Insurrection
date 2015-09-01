@@ -1,0 +1,163 @@
+#Events relating to the "Omegan Insurrection" disaster
+#For the most part, this just means hordes of Omegan drone rebels.
+#If you're winning the war against the Omega in spite of this, you can stabilize your country for free.
+#Needs to be finished.
+
+namespace = omegan_disaster
+
+#Beginning of the Omegan Insurrection
+country_event = {
+    id = omegan_disaster.1
+    title = omegan_disaster.1.t
+    description = omegan_disaster.1.d
+    picture = ANGRY_MOB_eventPicture
+    
+    is_triggered_only = yes
+    
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    #immediate = {}
+
+    #option = {}
+}
+
+#Adopt a zero-tolerance policy for easier stability at cost to revolt risk, or mercy for the opposite.
+country_event = {
+    id = omegan_disaster.2
+    title = omegan_disaster.2.t
+    description = omegan_disaster.2.d
+    picture = ANGRY_MOB_eventPicture
+    
+    is_triggered_only = yes
+    
+    trigger = {
+
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    #immediate = {}
+
+    #option = {}
+
+    #option = {}
+}
+
+#Rare event that gives free stability and prestige in return for a large drone rebellion if you're at war with the Omega and have >10 warscore
+country_event = {
+    id = omegan_disaster.3
+    title = omegan_disaster.3.t
+    description = omegan_disaster.3.d
+    picture = ANGRY_MOB_eventPicture
+    
+    is_triggered_only = yes
+    
+    trigger = {
+    
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    #immediate = {}
+
+    #option = {}
+
+    #option = {}
+}
+
+#Alternative, less punitive version (smaller rebellion) if you have >25 warscore
+country_event = {
+    id = omegan_disaster.4
+    title = omegan_disaster.4.t
+    description = omegan_disaster.4.d
+    picture = ANGRY_MOB_eventPicture
+    
+    is_triggered_only = yes
+    
+    trigger = {
+    
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    #immediate = {}
+
+    #option = {}
+
+    #option = {}
+}
+
+#One time opportunity to force peace with the Omega if you have negative warscore at the cost of prestige, stability, and a great deal of cash; does not end the disaster but will allow you to focus on the now disowned drones
+country_event = {
+    id = omegan_disaster.5
+    title = omegan_disaster.5.t
+    description = omegan_disaster.5.d
+    picture = ANGRY_MOB_eventPicture
+    
+    is_triggered_only = yes
+    
+    trigger = {
+    
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    #immediate = {}
+
+    #option = {}
+
+    #option = {}
+}
+
+#Generic drone uprising, can be stopped by paying money and manpower, or prevented for the duration of the disaster with a country modifier that reduces manpower growth and discipline.
+country_event = {
+    id = omegan_disaster.6
+    title = omegan_disaster.6.t
+    description = omegan_disaster.6.d
+    picture = ANGRY_MOB_eventPicture
+    
+    is_triggered_only = yes
+    
+    trigger = {
+    
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    #immediate = {}
+
+    #option = {}
+
+    #option = {}
+}
+
+#Event-based end of the Omegan Insurrection. Don't forget to clear any flags!
+country_event = {
+    id = omegan_disaster.7
+    title = omegan_disaster.7.t
+    description = omegan_disaster.7.d
+    picture = ANGRY_MOB_eventPicture
+    
+    is_triggered_only = yes
+    
+    mean_time_to_happen = {
+        days = 1
+    }
+
+    #immediate = {}
+
+    #option = {}
+
+}
