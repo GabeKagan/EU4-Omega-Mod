@@ -48,8 +48,14 @@ omega_drones = {
             factor = 9999
             owner = { 
                 war_with = OME 
-                is_neighbor_of = OME #This should make the Omega's more sensical in some ways.   
+                is_neighbor_of = OME #This should make the Omega more sensical in some ways.  
             }
+        }
+        modifier = {
+            factor = 9999
+            owner = { 
+                has_country_flag = vulnerable_to_drones #Borders mean nothing during the insurrection.
+            }  
         }
     }
 

@@ -3,9 +3,11 @@ omegan_insurrection {
 
     potential = {
         ai = no #Only for humans
-        is_year = 1500 #Usually, the player will need some time to set up their country
+        #is_year = 1500 #Usually, the player will need some time to set up their country, disabled for testing.
+        NOT = { set_country_flag = had_omegan_insurrection }
 
     }
+
     can_start = {
         war_with = OME #Replace with proper version?
         has_any_disaster = no
@@ -15,9 +17,11 @@ omegan_insurrection {
             }
         }
     }
+
     can_stop = {
         has_any_disaster = yes
     }
+
     progress = {
         modifier = {
             factor = 2
@@ -38,8 +42,10 @@ omegan_insurrection {
 
         modifier = {
             factor = 5
-            any_province = {
-                is_core = OME #In case you've already had successful drones or even just taken land from the Omega without triggering a disaster.
+            OME = {
+                any_province = {
+                    is_core = true #In case you've already had successful drones or even just taken land from the Omega without triggering a disaster. Make this work.
+                }
             }
         }
 
@@ -50,13 +56,15 @@ omegan_insurrection {
             }
         }
     }
+
     can_end = {
         stability = 2
     }
+
     modifier = {
         global_unrest = 5
         discipline = -0.05 #Sleeper agents can interfere with military operations
-        manpower_recovery_speed = 0.25 #Loyalists and sleepers rally to your armies to fight the Omegan hordes
+        manpower_recovery_speed = 0.25 #Loyalists and sleepers alike rally to your armies to fight the Omegan hordes
         stability_cost_modifier = 0.50
 
     }
@@ -65,15 +73,14 @@ omegan_insurrection {
     on_end = omegan_disaster.7
     on_monthly = {
         events = {
-    
+            omegan_disaster.2 #Defining your anti-Omegan policies is super important.
         }
         random_events = { 
-            1000 = 0
-            200 = omegan_disaster.2
+            600 = 0
             100 = omegan_disaster.3
             100 = omegan_disaster.4
             50 = omegan_disaster.5
-            100 = omegan_disaster.6
+            150 = omegan_disaster.6
         }
     }
 }
