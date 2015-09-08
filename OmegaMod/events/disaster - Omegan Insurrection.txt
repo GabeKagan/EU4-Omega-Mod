@@ -9,7 +9,7 @@ namespace = omegan_disaster
 country_event = {
     id = omegan_disaster.1
     title = omegan_disaster.1.t
-    description = omegan_disaster.1.d
+    desc = omegan_disaster.1.desc
     picture = ANGRY_MOB_eventPicture
     
     major = yes
@@ -42,7 +42,7 @@ country_event = {
 country_event = {
     id = omegan_disaster.2
     title = omegan_disaster.2.t
-    description = omegan_disaster.2.d
+    desc = omegan_disaster.2.desc
     picture = ANGRY_MOB_eventPicture
     
     is_triggered_only = yes
@@ -82,7 +82,7 @@ country_event = {
 country_event = {
     id = omegan_disaster.3
     title = omegan_disaster.3.t
-    description = omegan_disaster.3.d
+    desc = omegan_disaster.3.desc
     picture = ANGRY_MOB_eventPicture
     
     is_triggered_only = yes
@@ -124,7 +124,7 @@ country_event = {
 country_event = {
     id = omegan_disaster.4
     title = omegan_disaster.4.t
-    description = omegan_disaster.4.d
+    desc = omegan_disaster.4.desc
     picture = ANGRY_MOB_eventPicture
     
     is_triggered_only = yes
@@ -160,7 +160,7 @@ country_event = {
     #Don't bother
     option = {
         name = omegan_disaster.4.b
-        add_prestige = -5
+        add_prestige = -1
     }
 }
 
@@ -168,7 +168,7 @@ country_event = {
 country_event = {
     id = omegan_disaster.5
     title = omegan_disaster.5.t
-    description = omegan_disaster.5.d
+    desc = omegan_disaster.5.desc
     picture = ANGRY_MOB_eventPicture
     
     is_triggered_only = yes
@@ -210,7 +210,7 @@ country_event = {
 country_event = {
     id = omegan_disaster.6
     title = omegan_disaster.6.t
-    description = omegan_disaster.6.d
+    desc = omegan_disaster.6.desc
     picture = ANGRY_MOB_eventPicture
     
     is_triggered_only = yes
@@ -242,6 +242,7 @@ country_event = {
     #Dedicate extra resources to rooting out drones (needs custom tooltip)
     option = {
         name = omegan_disaster.6.c
+        custom_tooltip = omegan_disaster.6.ct
         add_country_modifier = {
             name = "omegan_disaster_rapid_response"
             duration = -1
@@ -255,7 +256,7 @@ country_event = {
 country_event = {
     id = omegan_disaster.7
     title = omegan_disaster.7.t
-    description = omegan_disaster.7.d
+    desc = omegan_disaster.7.desc
     picture = ANGRY_MOB_eventPicture
     
     is_triggered_only = yes
