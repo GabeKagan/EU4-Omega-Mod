@@ -1,0 +1,44 @@
+#Special government names for the Omega
+#Only the third rank should see usage since the Omega is always empire-level
+#See the localization file for the names, as opposed to their IDs
+
+early_omegan_government = {
+    rank = {
+        3 = OMEGA_IMPERIUM
+    }
+
+    ruler_male = {
+        3 = OMEGA_LIGHTBRINGER
+    }    
+    ruler_female = {
+        3 = OMEGA_LIGHTBRINGER
+    }
+
+    trigger = {
+        tag = OME
+        OME = {
+            NOT = { monthly_income = 75 }
+        }
+    }
+}
+
+#The Omega should take on a more aggressive title when rich enough; is this possible?
+later_omegan_government = {
+    rank = {
+        3 = OMEGA_IMPERIUM
+    }
+
+    ruler_male = {
+        3 = OMEGA_IMPERATOR
+    }    
+    ruler_female = {
+        3 = OMEGA_IMPERATOR_fem
+    }
+
+    trigger = {
+        tag = OME
+        OME = {
+            monthly_income = 75
+        }
+    }
+} 

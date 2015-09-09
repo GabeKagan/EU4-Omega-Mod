@@ -79,3 +79,8 @@ l_english:
  omegan_disaster.7.t: "The End of the Omegan Insurrection"
  omegan_disaster.7.desc: "The nightmare is over! While a few scattered drones probably remain active and hooked into the Omegan hive mind, we have learned to be more vigilant to their efforts, and also learned a great deal about our enemy. In the near future, we should be able to apply this knowledge not only to fight the Omega, but to fight our human rivals as well."
  omegan_disaster.7.a: "Order has been restored!"
+ #Government titles, which are form-agnostic and kind of goofy, like most of the localization
+ OMEGA_IMPERIUM: "Imperium"
+ OMEGA_LIGHTBRINGER: "Lightbringer"
+ OMEGA_IMPERATOR: "Archmaster"
+ OMEGA_IMPERATOR_fem: "Archmistress"
