@@ -84,3 +84,8 @@ l_english:
  OMEGA_LIGHTBRINGER: "Lightbringer"
  OMEGA_IMPERATOR: "Archmaster"
  OMEGA_IMPERATOR_fem: "Archmistress"
+ #Omegan CB and wargoals
+ cb_omegan_domination: "Domination"
+ cb_omegan_domination_desc: "We are destined to rule this planet, and then the entire universe!"
+ omegan_domination_war: "Dominate their country"
+ omegan_domination_war_desc: "Wargoal is to take everything. You will be able to annex. AI only. You shouldn't see this normally." 

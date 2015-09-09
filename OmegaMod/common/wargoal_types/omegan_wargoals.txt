@@ -1,0 +1,14 @@
+#Special, general wargoal for the Omega
+omegan_domination_war = {
+
+    type = superiority
+
+    badboy_factor = 0.75
+    prestige_factor = 1
+    peace_cost_factor = 0.25
+
+    po_demand_provinces = yes
+    allow_annex = yes
+
+    war_name = PRIMITIVE_WAR_NAME
+}

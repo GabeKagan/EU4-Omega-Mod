@@ -1,0 +1,8 @@
+#Special casus belli for the Omega; always in effect
+cb_omegan_domination = {
+    
+    prerequisites = {
+        tag = OME
+    }
+    war_goal = omegan_domination_war
+}
