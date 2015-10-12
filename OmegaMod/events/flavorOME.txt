@@ -70,10 +70,11 @@ country_event = {
                 add_base_tax = 5
                 add_base_production = 5 #New for 1.12.
                 add_base_manpower = 5
+
                 # A couple of name options.
                 random_list = {
                     25 = {
-                        change_province_name = "Mordor" #Also new for 1.12
+                        change_province_name = "Mordor" #First new name added in 1.12
                     }
                     #These are new for 1.13
                     25 = {
@@ -91,6 +92,8 @@ country_event = {
                 }
                 
             }
+            #Boost the Omega's govenrment rank. Possibly a minor boost.
+            set_government_rank = 3
         }
     }
 }
