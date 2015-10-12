@@ -20,6 +20,9 @@ omegan_insurrection {
 
     can_stop = {
         has_any_disaster = yes
+        NOT = {
+            war_with = OME #Insurrection should not progress during peacetime.
+        }
     }
 
     progress = {
