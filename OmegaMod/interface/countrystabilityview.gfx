@@ -90,6 +90,48 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_disaster_estate_nobility_disaster"
+		texturefile = "gfx//interface//disasters//estate_nobility_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_disaster_estate_burghers_disaster"
+		texturefile = "gfx//interface//disasters//estate_burghers_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_disaster_estate_church_disaster"
+		texturefile = "gfx//interface//disasters//estate_church_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_disaster_estate_cossacks_disaster"
+		texturefile = "gfx//interface//disasters//estate_cossacks_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_disaster_estate_dhimmi_disaster"
+		texturefile = "gfx//interface//disasters//estate_dhimmi_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
+		name = "GFX_disaster_estate_nomadic_tribes_disaster"
+		texturefile = "gfx//interface//disasters//estate_nomadic_tribes_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}	
+	
+	spriteType = {
 		name = "GFX_disaster_french_revolution"
 		texturefile = "gfx//interface//disasters//french_revolution.dds"
 		noOfFrames = 3
@@ -175,6 +217,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/govReb_change_government_bg.dds"
 		transparencecheck = yes
 		allwaystransparent = no
+		alphamaskfile = "gfx/interface/diplomacy_overlay_alpha.tga"
 	}
 		
 	spriteType = {
@@ -343,12 +386,32 @@ spriteTypes = {
 		texturefile = "gfx//interface//ideas_EU4//administrative_efficiency.tga"
 		loadType = "INGAME"
 		
-	}	
+	}
 
 	spriteType = {
-		name = "GFX_disaster_omegan_insurrection"
-		texturefile = "gfx//interface//disasters//omegan_insurrection.dds"
-		noOfFrames = 3
-		loadType = "INGAME"
+		name = "GFX_native_policy_coexist"
+		texturefile = "gfx/interface/native_policy_coexist.dds"
 	}
+	spriteType = {
+		name = "GFX_native_policy_hostile"
+		texturefile = "gfx/interface/native_policy_hostile.dds"
+	}
+	spriteType = {
+		name = "GFX_native_policy_trade"
+		texturefile = "gfx/interface/native_policy_trade.dds"
+	}	
+	spriteType = {
+		name = "GFX_native_policy_bg"
+		texturefile = "gfx/interface/native_policy_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_native_policy_icon"
+		texturefile = "gfx/interface/native_policy_icon.dds"
+	}	
+	spriteType = {
+        name = "GFX_disaster_omegan_insurrection"
+        texturefile = "gfx//interface//disasters//omegan_insurrection.dds"
+        noOfFrames = 3
+        loadType = "INGAME"
+    }
 }

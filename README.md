@@ -7,7 +7,7 @@ Currently in beta (v0.9). Most basic functionality has been implemented, but the
 
 A list of the most important planned changes follows:
 
-- HIGH PRIORITY: 1.14 makes AI attitudes hardcoded, meaning the "Overwhelming" attitude will be unavailable. We will need to rely on other ways to make the Omega avoid diplomacy and favor conquest.
+- HIGH PRIORITY: 1.14 makes AI attitudes hardcoded, meaning the "Overwhelming" attitude will be unavailable. We will need to rely on other ways to make the Omega avoid diplomacy and favor conquest. 1.14 doesn't seem to change much else that would be particularly important, but do check any replacement files for 1.14 updates.
 - Improve the Omegan Insurrection, since it probably needs refinement.
 - Disable native mechanics for an Omega spawned from Native Americans
 - Graphical enhancements, including a better flag, a tech group icon, and maybe new models/skins if we're really lucky
