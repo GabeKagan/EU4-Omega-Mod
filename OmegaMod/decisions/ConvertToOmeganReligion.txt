@@ -1,0 +1,98 @@
+#The Omega can only convert to Omeganism by decision.
+
+country_decisions = {
+
+    convert_to_omegan_religion = {
+
+        potential = {
+            tag = OME
+            NOT = { religion = omeganism }
+        }
+        #The Omega requires more time and money to create its religion in high tech areas than in Mesoamerica.
+        allow = {
+            OR = {
+                AND = {
+                    any_neighbor_country = {
+                        OR = {
+                            technology_group = western
+                            technology_group = eastern
+                            technology_group = ottoman
+                            technology_group = muslim
+                            technology_group = high_american
+
+                        }
+                    }
+                    monthly_income = 100
+                }                
+                AND = {
+                    any_neighbor_country = {
+                        OR = {
+                            technology_group = indian
+                            technology_group = chinese
+                            technology_group = nomad_group
+                            technology_group = sub_saharan
+                        }
+                    }
+                    monthly_income = 50
+                }                
+                AND = {
+                    any_neighbor_country = {
+                        OR = {
+                            technology_group = north_american
+                            technology_group = mesoamerican
+                            technology_group = south_american
+                            technology_group = andean
+                        }
+                    }
+                }
+            }
+        }
+        effect = {
+            change_religion = omeganism
+            add_stability = 3
+            random_owned_province = {
+                change_religion = omeganism
+            }
+            #We need something equivalent to this for heretics.
+            #add_country_modifier = {
+            #    name = "conversion_zeal"
+            #    duration = 36500
+            #}
+        }
+
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                AND = {
+                    any_neighbor_country = {
+                        OR = {
+                            technology_group = western
+                            technology_group = eastern
+                            technology_group = ottoman
+                            technology_group = muslim
+                            technology_group = high_american
+
+                        }
+                    }
+                    NOT = { is_year = 1500 }
+                } 
+            }            
+            modifier = {
+                factor = 0
+                AND = {
+                    any_neighbor_country = {
+                        OR = {
+                            technology_group = indian
+                            technology_group = chinese
+                            technology_group = nomad_group
+                            technology_group = sub_saharan
+                        }
+                    }
+                    NOT = { is_year = 1475 }
+                } 
+            }
+        }
+
+    }
+}

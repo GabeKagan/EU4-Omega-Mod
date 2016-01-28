@@ -1,0 +1,39 @@
+#A special religion for the Omega.
+
+omegan_religion = {
+
+    flags_with_emblem_percentage = 0 #Used for dynamic random nations. Not sure you should play with dynamics.
+
+    omeganism = {
+        color = { 0.4 0.4 0.4 }
+        icon = 1 #Set a new icon later and replace this.
+        #An enormous quantity boost.
+        country = {
+            land_forcelimit_modifier = 1
+            land_maintenance_modifier = -0.5
+        }
+        #Don't try to syncretize with the Omega face. It will RUIN you.
+        country_as_secondary = {
+            global_unrest = 10.00
+            legitimacy = -2
+        }
+        
+        
+        on_convert = {
+            change_religion = omeganism
+            add_prestige = 100
+            
+            add_country_modifier = {
+                name = "conversion_zeal"
+                duration = 3650
+            }
+        }
+        
+        #You're unlikely to see these outside Omegan colonies.
+        heretic = { OME_SUPREMACIST OME_INDIVIDUALIST OME_COMPUTRONIUM}
+    }
+
+    crusade_name = OMEGAN_CRUSADE
+}
+    
+}
