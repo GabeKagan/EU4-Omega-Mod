@@ -12,12 +12,12 @@ omegan_religion = {
             land_forcelimit_modifier = 1
             land_maintenance_modifier = -0.5
         }
-        #Don't try to syncretize with the Omega face. It will RUIN you.
+        
+        #This modifier brutally punishes any Tengri country foolish enough to adopt Omeganism as its syncretic religion.
         country_as_secondary = {
             global_unrest = 10.00
-            legitimacy = -2
+            legitimacy = -2.00
         }
-        
         
         on_convert = {
             change_religion = omeganism
@@ -29,8 +29,8 @@ omegan_religion = {
             }
         }
         
-        #You're unlikely to see these outside Omegan colonies.
-        heretic = { OME_SUPREMACIST OME_INDIVIDUALIST OME_COMPUTRONIUM}
+        #You're unlikely to see these outside Omegan colonial nations.
+        heretic = { OME_SUPREMACIST OME_INDIVIDUALIST OME_COMPUTRONIUM OME_DEMONIAC }
     }
 
     crusade_name = OMEGAN_CRUSADE
