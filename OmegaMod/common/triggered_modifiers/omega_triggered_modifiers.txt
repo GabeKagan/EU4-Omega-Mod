@@ -2,7 +2,7 @@
 # Difficulty adjustments for the Omega
 ##################################################
 
-omega_permanent_bonuses {
+omega_permanent_bonuses = {
     
     potential = {
         OR = {
@@ -33,7 +33,7 @@ omega_permanent_bonuses {
 
 }
 
-omega_lower_difficulty {
+omega_lower_difficulty = {
     
     potential = {
         tag = OME
@@ -51,7 +51,7 @@ omega_lower_difficulty {
 
 }
 
-omega_higher_difficulty {
+omega_higher_difficulty = {
     
     potential = {
         tag = OME
@@ -65,7 +65,7 @@ omega_higher_difficulty {
     stability_cost_modifier = -0.20
 }
 
-small_omega_buff {
+small_omega_buff = {
 
     potential = {
         tag = OME
@@ -81,7 +81,7 @@ small_omega_buff {
 
 }
 
-tiny_omega_buff {
+tiny_omega_buff = {
 
     potential = {
         tag = OME
@@ -98,7 +98,7 @@ tiny_omega_buff {
 }
 
 #If the Omega is hard, merely fighting it will demoralize and destabilize your country.
-fighting_hard_omega {
+fighting_hard_omega = {
     
     potential = {
         OME = { has_country_flag = made_omega_harder }
@@ -110,5 +110,21 @@ fighting_hard_omega {
 
     global_unrest = 5.00
     legitimacy = -1
+
+}
+
+#The Omega recieves some boosts to their religious institutions when they convert.
+omegan_conversion = {
+    
+    potential = {
+        tag = OME
+    }
+
+    trigger = {
+        religion = omeganism
+    }
+
+    missionaries = 2
+    global_missionary_strength = 0.03
 
 }
