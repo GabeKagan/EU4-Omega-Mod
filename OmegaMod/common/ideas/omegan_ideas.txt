@@ -31,7 +31,7 @@ OME_ideas = {
     }
     unimaginable_wealth = {
         production_efficiency = 1.0
-        global_trade_income_modifier = 1.0
+        trade_efficiency = 1.0
     }
     overwhelming_navy = {
         naval_forcelimit_modifier = 1.0
