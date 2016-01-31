@@ -3,7 +3,7 @@ EU4-Omega-Mod
 
 A mod for Europa Universalis IV that turns a random AI country into a ridiculously overpowered endboss. 
 
-Currently in beta (v0.9). Most basic functionality has been implemented, but there's a lot of room for further improvement. 0.9 adds the long-promised "Omegan Insurrection"; a human-only disaster that potentially can break your country and swarm you with drones. It also adds more localization for Omega-related subjects and gives the Omega a special casus belli.
+Currently gold! (1.0). Most basic functionality has been implemented, but there's a lot of room for further improvement. 1.0 adds EU4 1.15 compatibility and introduces Omeganism, a new religion designed specifically to drive a diplomatic wedge between the Omega and other AIs, as well as giving them another army quantity boost. It also fixes various bugs and issues.
 
 A list of the most important planned changes follows:
 
