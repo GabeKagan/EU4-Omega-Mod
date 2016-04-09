@@ -3,12 +3,12 @@ omegan_insurrection {
 
     potential = {
         ai = no #Only for humans
-        #is_year = 1500 #Usually, the player will need some time to set up their country, disabled for testing.
         NOT = { set_country_flag = had_omegan_insurrection }
 
     }
 
     can_start = {
+        is_year = 1500 #Usually, the player will need some time to set up their country
         war_with = OME #Replace with proper version?
         has_any_disaster = no
         NOT = {

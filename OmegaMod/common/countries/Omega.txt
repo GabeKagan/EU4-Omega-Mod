@@ -73,6 +73,10 @@ monarch_names = {
 	"Johnny Gat #0" = 5
 	"Zinyak #0" = 5
 
+	# New names for 1.16
+	"Haxabalatnar #0" = 10
+	"Mister Dark #0" = 1
+
 
 }
 
@@ -92,11 +96,14 @@ leader_names = {
 	Blooddrinker
 	Murderface
 	Harbinger
+	Maimkillburn
+	Haterage
+
 }
 
 ship_names = {
 	Abrasion Brimstone Carnage Destruction "Evil Incarnate"
-	Fearmonger Goremonger Hatred Inferno Justice
+	Fearmonger Goremonger Hatred Inferno Justice "Just Die Already"
 	Kill "Looming Terror" Mordor Nastiness
 	"Overwhelming Force" Omega Pain "Queen of Terror" Ruination Slaughter
 	Terror Unmaker "Vault of Doom" "Warrior's Folly" "X Death"
@@ -112,6 +119,7 @@ army_names {
 	"Legion of Killing the Human Player"
 	"Legion of Ruination"
 	"Legion of Destruction"
+	"Legion of Subjugation"
 }
 
 fleet_names {
@@ -119,4 +127,5 @@ fleet_names {
 	"Armada of Destruction" "Armada of Domination"
 	"Armada of Ruination" "Armada of Perdition"
 	"Armada of the Harbinger" "Armada of Doom"
+	"Armada of Subjugation"
 }

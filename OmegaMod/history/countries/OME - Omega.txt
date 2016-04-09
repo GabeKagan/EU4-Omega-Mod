@@ -1,6 +1,6 @@
 government = feudal_monarchy
-primary_culture = oirat #Make a special "Omega" culture later
-religion = sunni #Maybe make a special religion too
+primary_culture = omegan_culture
+religion = omeganism
 technology_group = omegan
 unit_type = western
 capital = 236 # London, chosen for its good trade node
