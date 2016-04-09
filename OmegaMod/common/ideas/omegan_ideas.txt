@@ -1,4 +1,4 @@
-#Unique Omegan ideas. Spun-off into their own file as part of the push to v0.5!
+#Unique Omegan ideas. Spun-off into their own file since v0.5.
 
 OME_ideas = {
     start = {

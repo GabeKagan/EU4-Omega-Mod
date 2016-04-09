@@ -92,8 +92,6 @@ country_event = {
                 }
                 
             }
-            #Boost the Omega's govenrment rank. Possibly a minor boost.
-            set_government_rank = 3
         }
     }
 }

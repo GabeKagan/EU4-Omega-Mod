@@ -8,6 +8,7 @@ omega_permanent_bonuses = {
         OR = {
             tag = OME
             is_subject_of = OME #Omegan vassals get to be more powerful than non-Omegan vassals.
+            ai = no #So that the player can see Omegan bonuses for reference.
         }
     }
 
@@ -28,6 +29,10 @@ omega_permanent_bonuses = {
     idea_cost = -1.00 #Originally part of their first idea
     land_morale = 0.20 #Generally useful to the armies of the Omega
     free_leader_pool = 3
+    #Added for 1.16
+    state_maintenance_modifier = -0.25 
+    max_states = 30
+    yearly_corruption = -1.0
 
     
 
@@ -36,17 +41,22 @@ omega_permanent_bonuses = {
 omega_lower_difficulty = {
     
     potential = {
-        tag = OME
+        tag = OME   
+        ai = no    
     }
 
     trigger = {
         has_country_flag = made_omega_easier
+        tag = OME   
     }
 
     #Add more stuff eventually
     global_tax_modifier = -0.5 #Removes the innate tax bonus
     global_unrest = 5.00 #Removes half of the unrest reduction
     technology_cost = 0.50 #Removes half of the tech bonus, potentially costing the Omega a lot of mana
+    Added for 1.16
+    state_maintenance_modifier = 0.25 #
+    max_states = -20
 
 
 }
@@ -54,13 +64,15 @@ omega_lower_difficulty = {
 omega_higher_difficulty = {
     
     potential = {
-        tag = OME
+        tag = OME          
+        ai = no
     }
 
     trigger = {
         has_country_flag = made_omega_harder
+        tag = OME
     }
-    global_tax_modifier = 0.5 #Even more money!
+    global_tax_modifier = 0.5
     global_trade_goods_size = 0.5 
     stability_cost_modifier = -0.20
 }
