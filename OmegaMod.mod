@@ -1,6 +1,6 @@
 name = "Omega"
 path = "mod/OmegaMod"
-supported_version = "1.16"
+supported_version = "1.17"
 tags =
 {
     "Gameplay"

@@ -75,6 +75,7 @@ omega_higher_difficulty = {
     global_tax_modifier = 0.5
     global_trade_goods_size = 0.5 
     stability_cost_modifier = -0.20
+    spy_offence = 0.5 #New for 1.17
 }
 
 small_omega_buff = {
@@ -122,6 +123,7 @@ fighting_hard_omega = {
 
     global_unrest = 5.00
     legitimacy = -1
+    global_spy_defence = -0.2
 
 }
 

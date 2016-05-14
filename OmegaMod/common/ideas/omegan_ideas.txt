@@ -22,7 +22,7 @@ OME_ideas = {
     }
     overwhelming_innovation = {
         diplomatic_reputation = 6
-        fabricate_claims_time = -0.75 #Could this make the Omega more aggressive?
+        fabricate_claims_cost = -0.75 #Updated for the 1.16 espionage rework
         
     }
     overwhelming_army = {
