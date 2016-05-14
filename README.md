@@ -3,7 +3,7 @@ EU4-Omega-Mod
 
 A mod for Europa Universalis IV that turns a random AI country into a ridiculously overpowered endboss. 
 
-Currently gold! (1.01). Most basic functionality has been implemented, but there's always room for further improvement. 1.01 adds compatibility with Mare Nostrum (1.16) and makes minor general improvements.
+Currently gold! (1.02). Most intended functionality has been implemented, but there's always room for further improvement. 1.02 is a minor compatibility patch for EU4 1.17
 
 A list of the most important planned changes follows:
 
